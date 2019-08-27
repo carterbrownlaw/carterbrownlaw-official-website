@@ -1,0 +1,5 @@
+@font-face {
+   font-family: 'Raleway';
+   // relative path is broken since I import this in main.scss?
+   src:  url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
