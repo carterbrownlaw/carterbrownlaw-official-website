@@ -2,11 +2,13 @@
 @import 'base/typography.scss';
 @import 'layout/nav.scss';
 @import 'layout/footer.scss';
+@import 'abstracts/variables';
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: $color3;
 }
 
 main {
@@ -14,5 +16,5 @@ main {
 }
 
 header {
-  background: tomato;
+  background: $color2;
 }
