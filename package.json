@@ -26,6 +26,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "delicious-hamburgers": "^0.4.2"
+    "delicious-hamburgers": "^0.4.2",
+    "jquery": "^3.4.1"
   }
 }
