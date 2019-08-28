@@ -16,19 +16,21 @@
     <img src=${require('../../assets/images/unsplash/books.jpg')}></img>
     <h1 id='page-heading'>About Us</h1>
     <div class='btn-header-container'>
-      <a id='heading-btn-one' class='btn'>About Angela</a>
-      <a id='heading-btn-two' class='btn'>About Steven</a>
+      <a href='#about-angela' class='btn'>About Angela</a>
+      <a href='#about-steven' class='btn'>About Steven</a>
     </div>
   </div>
   <div class='page-main'>
     <div id='about-angela'>
       <img src=${require('../../assets/images/unsplash/portrait.jpg')}></img>
-      <div class='bio'>
+      <div class='bio-angela'>
+        ${require('../../partials/_angela_bio.html')}
       </div>
     </div>
     <div id='about-steven'>
       <img src=${require('../../assets/images/unsplash/portrait.jpg')}></img>
-      <div class='bio'>
+      <div class='bio-steven'>
+        ${require('../../partials/_steven_bio.html')}
       </div>
     </div>
   </div>

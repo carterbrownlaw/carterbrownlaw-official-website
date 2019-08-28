@@ -3,15 +3,17 @@ import { StubHelper } from './stubHelper.js';
 import { adjustHeight } from './helpers.js';
 
 export class commonJS {
-  constructor() {
+  constructor(stub=true) {
     this.mainContainer = document.getElementsByTagName('main')[0];
     this.activePage = this.mainContainer.id;
     
     this.setupNav()
 
     // here during development
-    let stubber = new StubHelper(this.mainContainer);
-    stubber.stub(5);
+    if (stub) {
+      let stubber = new StubHelper(this.mainContainer);
+      stubber.stub(5);
+    }
     return this.mainContainer;
   }
 
@@ -23,7 +25,6 @@ export class commonJS {
     // visual selection of nav-item
     const activeNavItem = document.getElementById(`nav-item-${this.activePage}`);
     activeNavItem.style.borderBottom = '2px solid rgba(198, 172, 143, 1)';
-    console.log(activeNavItem.style);
 
     // collapse the navbar items
     adjustHeight(navItemsWrap, 0);

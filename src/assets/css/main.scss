@@ -4,6 +4,10 @@
 @import 'layout/footer.scss';
 @import 'abstracts/variables';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
