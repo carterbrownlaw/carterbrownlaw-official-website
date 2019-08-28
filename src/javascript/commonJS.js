@@ -7,6 +7,7 @@ export class commonJS {
     this.mainContainer = document.getElementsByTagName('main')[0];
     
     this.setupNav()
+
     // here during development
     let stubber = new StubHelper(this.mainContainer);
     stubber.stub(5);
