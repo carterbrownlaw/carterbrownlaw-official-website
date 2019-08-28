@@ -1,6 +1,19 @@
 @import '../abstracts/variables.scss';
 @import '../components/buttons.scss';
 
+.bio {
+}
+// might have to be global
+.page-main {
+  width: 100%;
+  padding: 0 30px;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -28,3 +41,4 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+// end of global
