@@ -3,11 +3,36 @@ $hamburger-animations: (stack);
 @import "~delicious-hamburgers/scss/hamburgers";
 
 nav {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-areas:
+    'logo nav-burger'
+    'nav-items nav-items';
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#logo {
+  grid-area: logo;
 }
 
 #nav-btn {
-  margin-left: 1em;
-  padding-left: 0;
+  grid-area: nav-burger;
+  justify-self: end;
+  margin-right: 1em;
+  padding-right: 0;
+}
+
+#nav-items-wrap {
+  grid-area: nav-items;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
 }
 
 #nav-items {
@@ -15,22 +40,5 @@ nav {
   justify-content: space-between;
   list-style: none;
   margin: 0 1em;
-  padding: 0;
-  background: tomato;
-  overflow: hidden;
-  transition: height 200ms;
+  padding: 1em 0;
 }
-
-.nav-item {
-  text-decoration: none;
-  color: black;
-}
-
-.items-hidden {
-  height: 0;
-}
-
-.items-active {
-  height: auto;
-}
-
