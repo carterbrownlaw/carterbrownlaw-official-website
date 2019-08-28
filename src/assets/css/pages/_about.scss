@@ -1,0 +1,36 @@
+@import '../abstracts/variables.scss';
+
+#page-header {
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+
+  button {
+  }
+}
+
+.btn {
+  position: absolute;
+  width: 7em;
+  transform: translate(-50%, -50%);
+}
+
+#heading-btn-one {
+  top: 60%;
+  left: 25%;
+}
+
+#heading-btn-two {
+  top: 60%;
+  left: 75%;
+}
+
+#page-heading {
+  position: absolute;
+  color: $color3;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
