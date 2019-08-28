@@ -1890,6 +1890,11 @@ delegates@^1.0.0:
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
+delicious-hamburgers@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/delicious-hamburgers/-/delicious-hamburgers-0.4.2.tgz#a4b712e88f7db7b14ae956024548100e74217a50"
+  integrity sha512-OeDocTck1tbMVYy/x1OUJhT4ziZPYqi+uT/3oZF1Q/E3T+e6NUIiSlxQ5BbU3JH92ooOZ+bcySaSsXS4uCmCig==
+
 depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"

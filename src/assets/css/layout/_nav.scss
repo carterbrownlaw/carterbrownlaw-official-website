@@ -1,3 +1,36 @@
-nav {
+// TODO: only add the one you need not the whole thing...
+$hamburger-animations: (stack);
+@import "~delicious-hamburgers/scss/hamburgers";
 
+nav {
 }
+
+#nav-btn {
+  margin-left: 1em;
+  padding-left: 0;
+}
+
+#nav-items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 1em;
+  padding: 0;
+  background: tomato;
+  overflow: hidden;
+  transition: height 200ms;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+.items-hidden {
+  height: 0;
+}
+
+.items-active {
+  height: auto;
+}
+
