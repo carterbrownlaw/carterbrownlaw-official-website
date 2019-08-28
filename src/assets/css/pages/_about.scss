@@ -1,13 +1,13 @@
 @import '../abstracts/variables.scss';
 @import '../components/buttons.scss';
 
+img {
+  max-width: 100%;
+}
+
 .page-header {
   position: relative;
   max-width: 100%;
-
-  img {
-    max-width: 100%;
-  }
 }
 
 .btn-header-container {
