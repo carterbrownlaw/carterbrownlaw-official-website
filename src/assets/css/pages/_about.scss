@@ -1,30 +1,24 @@
 @import '../abstracts/variables.scss';
+@import '../components/buttons.scss';
 
-#page-header {
+.page-header {
   position: relative;
+  max-width: 100%;
 
   img {
     max-width: 100%;
   }
-
-  button {
-  }
 }
 
-.btn {
+.btn-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
   position: absolute;
-  width: 7em;
   transform: translate(-50%, -50%);
-}
-
-#heading-btn-one {
-  top: 60%;
-  left: 25%;
-}
-
-#heading-btn-two {
-  top: 60%;
-  left: 75%;
+  padding: 0 2.5%;
+  top: 65%;
+  left: 50%;
 }
 
 #page-heading {

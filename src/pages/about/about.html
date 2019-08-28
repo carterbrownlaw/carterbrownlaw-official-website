@@ -12,11 +12,21 @@
     ${require('../../partials/_navbar.html')}
   </header>
   <main id='about'>
-  <div id='page-header'>
+  <div class='page-header'>
     <img src=${require('../../assets/images/unsplash/books.jpg')}></img>
     <h1 id='page-heading'>About Us</h1>
-    <button id='heading-btn-one' class='btn'>About Angela</button>
-    <button id='heading-btn-two' class='btn'>About Steven</button>
+    <div class='btn-header-container'>
+      <a id='heading-btn-one' class='btn'>About Angela</a>
+      <a id='heading-btn-two' class='btn'>About Steven</a>
+    </div>
+  </div>
+  <div class='page-main'>
+    <div id='about-angela'>
+      <img src=${require('../../assets/images/unsplash/portrait.jpg')}></img>
+    </div>
+    <div id='about-steven'>
+      <img src=${require('../../assets/images/unsplash/portrait.jpg')}></img>
+    </div>
   </div>
   </main>
   ${require('../../partials/_footer.html')}
