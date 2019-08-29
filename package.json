@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "delicious-hamburgers": "^0.4.2",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "load-google-maps-api": "^2.0.1"
   }
 }
