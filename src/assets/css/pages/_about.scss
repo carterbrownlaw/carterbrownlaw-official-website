@@ -3,6 +3,27 @@
 
 .bio {
 }
+
+$triangle-size: 15px;
+
+.section-start {
+  position: relative;
+  background: $background-color2;
+  color: $background-color1;
+  text-align: center;
+}
+
+.section-start::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -$triangle-size;
+  border-top: solid $triangle-size $background-color2;
+  border-left: solid $triangle-size transparent;
+  border-right: solid $triangle-size transparent;
+}
+
 // might have to be global
 .page-main {
   width: 100%;
