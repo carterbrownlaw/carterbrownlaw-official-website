@@ -5,7 +5,7 @@ import '../../assets/css/pages/_contact.scss';
 import { commonJS } from '../../javascript/commonJS.js';
 
 const mainContainer = new commonJS(false);
-// setupMap();
+setupMap();
 
 function setupMap() {
   const loadGoogleMapsApi = require('load-google-maps-api');

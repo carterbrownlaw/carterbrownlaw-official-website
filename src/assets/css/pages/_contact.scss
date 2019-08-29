@@ -19,3 +19,23 @@
   text-decoration: none;
   color: $headerfontcolor;
 }
+
+.contact-card {
+  text-align: left;
+  color: $generalfontcolor;
+
+  h2 {
+    text-align: left;
+  }
+}
+
+.contact-section {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+// .contact-card-num {
+//   color: $generalfontcolor;
+// }
+

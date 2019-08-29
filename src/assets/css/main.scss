@@ -6,8 +6,12 @@
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 html {
@@ -29,3 +33,20 @@ main {
   flex: 1;
 }
 
+// TODO: global css. refactor later when it makes sense
+.page-main {
+  width: 100%;
+  padding: 0 30px;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+section {
+  img {
+    width: 100%;
+  }
+}
+// end of global
