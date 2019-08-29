@@ -1,0 +1,33 @@
+@import '../abstracts/variables.scss';
+@import '../components/buttons.scss';
+
+.page-header {
+  position: relative;
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.header-text-center {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0 1em;
+  top: 65%;
+  left: 50%;
+}
+
+.btn-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-heading {
+  position: absolute;
+  color: $headerfontcolor;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

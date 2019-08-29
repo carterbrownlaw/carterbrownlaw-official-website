@@ -5,7 +5,7 @@ import '../../assets/css/pages/_contact.scss';
 import { commonJS } from '../../javascript/commonJS.js';
 
 const mainContainer = new commonJS(false);
-setupMap();
+// setupMap();
 
 function setupMap() {
   const loadGoogleMapsApi = require('load-google-maps-api');
@@ -15,13 +15,7 @@ function setupMap() {
     lat: -25.344,
     lng: 131.036
   };
-  // The map, centered at carter brown law
-  // var map = new googleMaps.Map( mapContainer, {
-  //   zoom: 4,
-  //   center: uluru
-  // });
   loadGoogleMapsApi({key: 'AIzaSyCkS58fwUabI3HKffisb7dyOGuR3XRmqFo'}).then((googleMaps) => {
-    // console.log(mapContainer);
     new googleMaps.Map(mapContainer, {
       zoom: 4,
       center: uluru

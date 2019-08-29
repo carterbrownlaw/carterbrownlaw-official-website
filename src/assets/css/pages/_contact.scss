@@ -1,4 +1,21 @@
+@import '../components/page_header.scss';
+
 #map {
   width: 100%;
   height: 300px;
+}
+
+// TODO: possible global
+#header-important {
+  text-align: center;
+  color: $headerfontcolor;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.header-phone-num {
+  text-decoration: none;
+  color: $headerfontcolor;
 }
