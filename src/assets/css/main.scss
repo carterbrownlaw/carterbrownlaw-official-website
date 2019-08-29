@@ -4,6 +4,12 @@
 @import 'layout/footer.scss';
 @import 'abstracts/variables';
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,19 +18,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: $color3;
+  background: $background-color1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 main {
   flex: 1;
 }
 
-header {
-  background: $color2;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}

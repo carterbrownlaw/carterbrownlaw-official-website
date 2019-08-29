@@ -2,7 +2,7 @@
 $hamburger-size: 35px;
 $hamburger-thickness: 3px;
 $hamburger-animations: (stack);
-$hamburger-color: $color4;
+$hamburger-color: $navfontcolor;
 @import "~delicious-hamburgers/scss/hamburgers";
 
 nav {
@@ -12,11 +12,12 @@ nav {
   grid-template-areas:
     'logo nav-burger'
     'nav-items nav-items';
+  background: $navbgcolor1;
 
   a {
     position: relative;
     text-decoration: none;
-    color: $color4;
+    color: $navfontcolor;
   }
 
 }
@@ -34,7 +35,7 @@ nav {
 
 #nav-items-wrap {
   grid-area: nav-items;
-  background: $color2-light;
+  background: $navbgcolor2;
   overflow: hidden;
   height: 0;
   -webkit-transition: height 0.2s ease;
@@ -49,7 +50,7 @@ nav {
   padding: 1em 0;
 
   a:hover {
-    color: $color4;
+    color: $navfontcolor;
   }
 
   a:before {
@@ -59,7 +60,7 @@ nav {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $color4;
+    background-color: $navfontcolor;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
