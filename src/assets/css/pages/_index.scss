@@ -1,3 +1,46 @@
+@import '../abstracts/variables.scss';
+@import '../components/buttons.scss';
+@import '../components/page_header.scss';
+
 div {
   // font-family: 'Raleway';
+}
+
+#services-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-gap: 0.5em;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  width: 100%;
+}
+
+.service-block {
+  // width: 50%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .service-block:hover {
+//   opacity: 0.5;
+// }
+
+#s1 {
+  background: red;
+}
+
+#s2 {
+  background: blue;
+}
+
+#s3 {
+  background: green;
+}
+
+#s4 {
+  background: yellow;
 }
