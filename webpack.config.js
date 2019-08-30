@@ -81,6 +81,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/contact/contact.html',
+      templateParameters: {
+        carter_brown_info: require('./src/assets/content/carter_brown_info.json')
+      },
       inject: true,
       chunks: ['contact'],
       filename: 'contact.html'

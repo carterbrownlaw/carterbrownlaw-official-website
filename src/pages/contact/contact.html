@@ -17,7 +17,7 @@
     <h1 id='page-heading'>Contact Us</h1>
     <div class='header-text-center' id='header-important'>
       <p>We can help! Contact us:</p>
-      <a href='tel:+1-303-499-711' class='header-phone-num'>+1 (303) 499-7111</a>
+      <a href='tel:${carter_brown_info.company.emergency_phone}' class='header-phone-num'>${carter_brown_info.company.emergency_phone}</a>
     </div>
   </div>
   <div class='page-main'>
@@ -25,21 +25,21 @@
     <section class='contact-section'>
       <h1>Carter Brown Office</h1>
       <img src=${require('../../assets/images/unsplash/office-temp.jpg')}></img>
-      <p>
-        <div class='icon'></div>
-        <strong>Address</strong>
-        <span>614 Grand Ave Apt 19614 Grand Ave San Luis Obispo, CA 93401</span>
-      </p>
-      <p>
-        <div class='icon'></div>
-        <strong>Office number</strong>
-        <a href='tel:+1-303-499-711' class='contact-card-num'>+1 (303) 499-7111</a>
-      </p>
-      <p>
-        <div class='icon'></div>
-        <strong>Fax</strong>
-        <a href='fax:+1-303-499-711' class='contact-card-num'>+1 (303) 499-7111</a>
-      </p>
+      <div>
+        <span class='icon'></span>
+        <strong>Address:</strong>
+        <span>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</span>
+      </div>
+      <div>
+        <span class='icon'></span>
+        <strong>Office number:</strong>
+        <a href='tel:${carter_brown_info.company.phone}' class='contact-card-num'>${carter_brown_info.company.phone}</a>
+      </div>
+      <div>
+        <span class='icon'></span>
+        <strong>Fax:</strong>
+        <a href='fax:${carter_brown_info.company.fax}' class='contact-card-num'>${carter_brown_info.company.fax}</a>
+      </div>
       <div id='map'></div>
     </section>
     <!-- contact card section -->
@@ -47,30 +47,30 @@
       <!-- angela contact card -->
       <div class='contact-card'>
         <h2>Contact Angela</h2>
-        <p>
-          <div class='icon'></div>
-          <strong>Phone number</strong>
-          <a href='tel:+1-303-499-711' class='contact-card-num'>+1 (303) 499-7111</a>
-        </p>
-        <p>
-          <div class='icon'></div>
-          <strong>Email address</strong>
-          <a href='mailto:email@gmail.com' class='contact-card-email'>email@gmail.com</a>
-        </p>
+        <div>
+          <span class='icon'></span>
+          <strong>Phone number:</strong>
+          <a href='tel:${carter_brown_info.employees.angela.phone}' class='contact-card-num'> ${carter_brown_info.employees.angela.phone} </a>
+        </div>
+        <div>
+          <span class='icon'></span>
+          <strong>Email address:</strong>
+          <a href='mailto:${carter_brown_info.employees.angela.email}' class='contact-card-email'>${carter_brown_info.employees.angela.email}</a>
+        </div>
       </div>
       <!-- steven contact card -->
       <div class='contact-card'>
         <h2>Contact Steven</h2>
-        <p>
-          <div class='icon'></div>
-          <strong>Phone number</strong>
-          <a href='tel:+1-303-499-711' class='contact-card-num'>+1 (303) 499-7111</a>
-        </p>
-        <p>
-          <div class='icon'></div>
-          <strong>Email address</strong>
-          <a href='mailto:email@gmail.com' class='contact-card-email'>email@gmail.com</a>
-        </p>
+        <div>
+          <span class='icon'></span>
+          <strong>Phone number:</strong>
+          <a href='tel:${carter_brown_info.employees.steven.phone}' class='contact-card-num'>${carter_brown_info.employees.steven.phone}</a>
+        </div>
+        <div>
+          <span class='icon'></span>
+          <strong>Email address:</strong>
+          <a href='mailto:${carter_brown_info.employees.steven.email}' class='contact-card-email'>${carter_brown_info.employees.steven.email}</a>
+        </div>
       </div>
     </section>
   </div>

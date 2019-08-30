@@ -1,0 +1,25 @@
+{
+  "company": {
+    "phone": "+1-777-777-7777",
+    "fax": "+1-777-777-7777",
+    "emergency_phone": "+1-777-777-7777",
+    "address": {
+      "street": "435 N. Main Street",
+      "city": "Lakeport",
+      "state": "CA",
+      "zip": "95564"
+    }
+  },
+  "employees": {
+    "angela": {
+      "fullname": "Angela Carter",
+      "phone": "+1-(707)-245-4727",
+      "email": "cartercarterlaw@gmail.com"
+    },
+    "steven": {
+      "fullname": "Steven Brown",
+      "phone": "+1-(707)-350-7748",
+      "email": "rsbjd@ymail.com"
+    }
+  }
+}
