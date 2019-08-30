@@ -4,7 +4,7 @@ import '../../assets/css/pages/_testimonials.scss';
 // JS imports
 import { commonJS } from '../../javascript/commonJS.js';
 
-const mainContainer = new commonJS(false);
+const mainContainer = new commonJS();
 
 // load all testimonials
 const testimonialsContext = require.context('../../assets/content/testimonials/', true, /\.json$/);

@@ -1,19 +1,13 @@
 // FILE PURPOSE: contains common functionality between all pages
-import { StubHelper } from './stubHelper.js';
 import { adjustHeight } from './helpers.js';
 
 export class commonJS {
-  constructor(stub=true) {
+  constructor() {
     this.mainContainer = document.getElementsByTagName('main')[0];
     this.activePage = this.mainContainer.id;
     
     this.setupNav()
 
-    // here during development
-    if (stub) {
-      let stubber = new StubHelper(this.mainContainer);
-      stubber.stub(5);
-    }
     return this.mainContainer;
   }
 

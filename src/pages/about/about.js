@@ -3,4 +3,4 @@ import '../../assets/css/pages/_about.scss';
 // JS imports
 import { commonJS } from '../../javascript/commonJS.js';
 
-const mainContainer = new commonJS(false);
+const mainContainer = new commonJS();
