@@ -2,13 +2,12 @@ import '../../assets/css/main.scss';
 import '../../assets/css/pages/_testimonials.scss';
 
 // JS imports
+import { importTestimonials } from '../../javascript/helpers.js';
 import { commonJS } from '../../javascript/commonJS.js';
 
-const mainContainer = new commonJS();
+const mainContainer = new commonJS(false);
 
-// load all testimonials
-const testimonialsContext = require.context('../../assets/content/testimonials/', true, /\.json$/);
-const testimonialFiles = testimonialsContext.keys().map((filename) => testimonialsContext(filename));
+const testimonialFiles = importTestimonials();
 
 const testiContainer = document.getElementById('testimonial-container');
 testimonialFiles.forEach((t) => {
