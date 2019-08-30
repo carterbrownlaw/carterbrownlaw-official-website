@@ -11,15 +11,21 @@ function setupMap() {
   const loadGoogleMapsApi = require('load-google-maps-api');
   const mapContainer = document.getElementById('map');
   // The location of carter brown law offices
-  var uluru = {
-    lat: -25.344,
-    lng: 131.036
+  var officeLoc = {
+    lat: 39.044898,
+    lng: -122.915438
   };
+
+  // load google maps
   loadGoogleMapsApi({key: 'AIzaSyCkS58fwUabI3HKffisb7dyOGuR3XRmqFo'}).then((googleMaps) => {
-    new googleMaps.Map(mapContainer, {
-      zoom: 4,
-      center: uluru
+    // load map
+    const map = new googleMaps.Map(mapContainer, {
+      zoom: 16.5,
+      center: officeLoc,
+      disableDefaultUI: true
     });
+    // place marker
+    const marker = new googleMaps.Marker({position: officeLoc, map: map});
   }).catch(function (error) {
     console.error(error)
   });
