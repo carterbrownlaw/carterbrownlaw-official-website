@@ -1,7 +1,7 @@
 // background colors
 $background-color1: rgba(234, 224, 213, 1);
 $background-color2: rgba(34, 51, 59, 1);
-
+$footerbgcolor: black;
 
 // nav colors
 $navbgcolor1: $background-color2;
@@ -12,8 +12,16 @@ $generalfontcolor: rgba(10, 9, 8, 1);
 $buttonfontcolor: rgba(234, 224, 213, 1);
 $headerfontcolor: rgba(234, 224, 213, 1);
 $navfontcolor: rgba(198, 172, 143, 1);
+$footerfontcolor: white;
+$footerfontheadingcolor: grey;
 
+// font options
+$fontgeneralsize: 18px;
+$fontfootersize: 14px;
+$fontfooterheadingsize: 18px;
 
+// spacing
+$sidespacesmall: 30px;
 // experimental colors
 // $slickblackbrownish: rgba(10, 9, 8, 1);
 // $coolbrown: rgba(94, 80, 63, 1);

@@ -1,5 +1,37 @@
+@import 'abstracts/variables';
+
 footer {
-  width: 100vw;
-  background: black;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5em;
+  width: 100%;
+  background: $footerbgcolor;
+  color: $footerfontcolor;
+  font-size: $fontfootersize;
+}
+
+.footer-section {
+  padding: 0 $sidespacesmall;
+}
+
+.footer-heading {
+  font-size: $fontfooterheadingsize;
+  color: $footerfontheadingcolor;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+
+  a {
+    color: $footerfontcolor;
+  }
+}
+
+#copyright {
+  margin-top: 10vh;
+  padding: 1em 0;
+  border-top: 1px grey solid;
+  text-align: center;
+  font-size: 12px;
 }

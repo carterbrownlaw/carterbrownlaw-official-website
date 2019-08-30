@@ -25,7 +25,7 @@ body {
   background: $background-color1;
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: $fontgeneralsize;
   color: $generalfontcolor;
 }
 
@@ -36,7 +36,7 @@ main {
 // TODO: global css. refactor later when it makes sense
 .page-main {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 $sidespacesmall;
 
   h2 {
     width: 100%;
