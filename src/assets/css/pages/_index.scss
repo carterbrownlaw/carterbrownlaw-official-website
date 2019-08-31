@@ -2,31 +2,66 @@
 @import '../components/buttons.scss';
 @import '../components/page_header.scss';
 
-div {
-  // font-family: 'Raleway';
-}
-
 // testimonials css
+$testimonialfontcolor: $headerfontcolor;
+$testimonialcardcolor: rgb(128,0,0);
+
 .tns-nav {
   text-align: center;
-  margin: 10px 0;
+  margin: 2.5px 0;
 }
+
 .tns-nav > [aria-controls] {
-  width: 9px;
-  height: 9px;
+  width: 6px;
+  height: 6px;
   padding: 0;
   margin: 0 5px;
   border-radius: 50%;
-  background: black;
+  background: grey;
   border: 0;
 }
 
-.tns-nav > .tns-nav-active { background: #999; }
+.tns-nav > .tns-nav-active { background: black; }
 
-// .testimonial {
-//   width: 100%;
-// }
+#testimonials-container {
+  // background: blue;
+}
 
+.testimonial {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  background: $testimonialcardcolor;
+  color: $testimonialfontcolor;
+  margin: 10px;
+  // border: 1px grey solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;// text-align: center;
+  align-items: center;
+  p {
+    margin: 10px 0;
+    width: 80%;
+  }
+}
+
+.testimonial-text {
+  text-align: left;
+}
+
+.testimonial-author {
+  text-align: right;
+}
+
+.testimonial::after {
+  position: absolute;
+  content: "";
+  border: 1px white solid;
+  // top: 5%;
+  // left: 5%;
+  width: 95%;
+  height: 90%;
+}
 
 // services css
 #services-container {

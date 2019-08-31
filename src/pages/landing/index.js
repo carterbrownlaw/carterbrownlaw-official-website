@@ -31,17 +31,21 @@ const slider = tns({
   controls: false,
   navPosition: 'bottom',
   mouseDrag: true,
+  gutter: 10,
   autoplayButtonOutput: false
 });
 
 function createTestimonial(t) {
   // create elements
+  const tWrap = document.createElement('div');
   const tElement = document.createElement('div');
   const tText = document.createElement('p');
   const tAuthor = document.createElement('p');
   
   // add styles
+  tWrap.classList.add('t-wrap');
   tElement.classList.add('testimonial');
+  tText.classList.add('testimonial-text');
   tAuthor.classList.add('testimonial-author');
 
   // add content
@@ -51,6 +55,7 @@ function createTestimonial(t) {
   // append things
   tElement.appendChild(tText);
   tElement.appendChild(tAuthor);
+  tWrap.appendChild(tElement);
 
-  return tElement;
+  return tWrap;
 }
