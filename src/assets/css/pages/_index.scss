@@ -3,7 +3,27 @@
 @import '../components/page_header.scss';
 
 // header specific css
-#separator {
+#header-cb-index {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#cb-logo {
+ font-size: 3em;
+}
+
+#header-cb-h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px $headerfontcolor solid;
+  font-size: 1.5em;
+}
+
+#header-cb-p {
+  font-size: 0.75em;
+}
+
+.separator {
   font-size: smaller;
 }
 
