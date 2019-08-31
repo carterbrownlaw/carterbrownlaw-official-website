@@ -8,6 +8,17 @@
   img {
     max-width: 100%;
   }
+
+  h1 {
+    width: 100%;
+    color: $headerfontcolor;
+    font-family: $headerfontfamily;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .header-text-center {
@@ -24,12 +35,3 @@
   justify-content: space-between;
 }
 
-#page-heading {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  color: $headerfontcolor;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}

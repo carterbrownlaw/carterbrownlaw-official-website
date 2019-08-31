@@ -4,7 +4,8 @@ $background-color2: rgba(34, 51, 59, 1);
 $footerbgcolor: black;
 
 // nav colors
-$navbgcolor1: rgba(10, 9, 8, 1);
+$navbgcolor1: rgba(242, 233, 228, 1);
+// $navbgcolor1: rgba(10, 9, 8, 1);
 $navbgcolor2: rgba(75, 90, 97, 1);
 
 // font colors
@@ -15,13 +16,27 @@ $navfontcolor: rgba(198, 172, 143, 1);
 $footerfontcolor: white;
 $footerfontheadingcolor: grey;
 
-// font options
+// font families
+$generalfontfamily: Georgia, 'Times New Roman', Times, serif;
+$headerfontfamily: 'Lato', 'Times New Roman', Georgia;
+$footerfontfamily: Georgia, 'Times New Roman', Times, serif;
+$btnfontfamily: 'BebasNeue', Georgia, 'Times New Roman', Times, serif;
+$btnmainfontfamily: 'BebasNeue', Georgia, 'Times New Roman', Times, serif;
+
+// font sizes
 $fontgeneralsize: 18px;
+$genh2size: 28px;
 $fontfootersize: 14px;
 $fontfooterheadingsize: 18px;
 
 // spacing
-$sidespacesmall: 30px;
+$sidespacesmall: 20px;
 // experimental colors
 // $slickblackbrownish: rgba(10, 9, 8, 1);
 // $coolbrown: rgba(94, 80, 63, 1);
+
+// buttons
+$btnshadowcolor: black;
+$btnfontsize: 18px;
+$btnpadding: 10px 25px;
+

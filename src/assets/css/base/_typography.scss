@@ -3,3 +3,15 @@
    // relative path is broken since I import this in main.scss?
    src:  url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
 }
+
+@font-face {
+   font-family: 'BebasNeue';
+   // relative path is broken since I import this in main.scss?
+   src:  url('../fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Lato';
+   // relative path is broken since I import this in main.scss?
+   src:  url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}

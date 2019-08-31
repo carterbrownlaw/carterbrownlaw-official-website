@@ -1,43 +1,52 @@
+@import '../abstracts/variables.scss';
+
 .btn, .btn-main {
-  padding: 13px 32px;
-  padding: 0.5em 0.75em;
-  font-size: 18px;
-  -moz-box-shadow:  0px 10px 14px -7px #276873;
-  -webkit-box-shadow:  0px 10px 14px -7px #276873;
-  box-shadow: 0px 10px 14px -7px #276873;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
-  background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
-  background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
-  background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
-  background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
-  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-  background-color: #599bb3;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  padding: $btnpadding;
+  // padding: 0.5em 0.75em;
+  font-size: $btnfontsize;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   display: inline-block;
   cursor: pointer;
-  color: $buttonfontcolor;
-  font-family: Arial;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-align: center;
   text-decoration: none;
   text-shadow: 0px 1px 0px #3d768a;
+  -moz-box-shadow:  0px 10px 14px -7px $btnshadowcolor;
+  -webkit-box-shadow:  0px 10px 14px -7px $btnshadowcolor;
+  box-shadow: 0px 10px 14px -7px $btnshadowcolor;
+
+  // colors
+  color: $buttonfontcolor;
+  background: rgba(169,3,41,1);
+  background: -moz-linear-gradient(46deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
+  background: -webkit-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  background: linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );
 }
 
-// .btn-main {
-//   margin: 0 auto;
-//   max-width: 5em;
-// }
+.btn {
+  font-family: $btnfontfamily;
+}
+
+.btn-main {
+  font-family: $btnmainfontfamily;
+}
 
 .btn:hover, .btn-main:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
-  background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
-  background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
-  background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
-  background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
-  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-  background-color: #408c99;
+  background: rgba(151,2,37,1);
+  background: -moz-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(151,2,37,1)), color-stop(44%, rgba(126,2,31,1)), color-stop(100%, rgba(92,0,21,1)));
+  background: -webkit-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
+  background: linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#970225', endColorstr='#5c0015', GradientType=1 );
 }
 
 .btn:active, .btn-main:active {
