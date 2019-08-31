@@ -52,7 +52,9 @@
 .testimonial {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  background: $testimonialcardcolor;
+  background-image: url('../../images/card.jpg');
+  background-size: 100% 100%;
+  // background: $testimonialcardcolor;
   color: $testimonialfontcolor;
   margin: 10px;
   font-family: $testimonialcardfontfamily;
@@ -63,6 +65,7 @@
   flex-direction: column;
   justify-content: center;// text-align: center;
   align-items: center;
+
   p {
     margin: 10px 0;
     width: 80%;
@@ -77,15 +80,15 @@
   text-align: right;
 }
 
-.testimonial::after {
-  position: absolute;
-  content: "";
-  border: 1px rgba(255, 255, 255, 0.5) solid;
-  // top: 5%;
-  // left: 5%;
-  width: 95%;
-  height: 90%;
-}
+// .testimonial::after {
+//   position: absolute;
+//   content: "";
+//   border: 1px rgba(255, 255, 255, 0.5) solid;
+//   // top: 5%;
+//   // left: 5%;
+//   width: 95%;
+//   height: 90%;
+// }
 
 // services css
 #services-container {

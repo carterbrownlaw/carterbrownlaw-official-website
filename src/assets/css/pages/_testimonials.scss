@@ -2,13 +2,29 @@
 @import '../abstracts/variables';
 
 .testimonial {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 0.5em 0.75em;
-  margin: 2vh 0;
-  background: $testimonialcardcolor;
-  color: $testimonialfontcolor;
+  margin: 4vh 0;
+  // background: $testimonialcardcolor;
+  background-image: url('../../images/card.jpg');
+  background-size: 100% 100%;
+  // color: $testimonialfontcolor;
   font-family: $testimonialcardfontfamily;
   font-weight: bold;
 }
+
+// .testimonial::after {
+//   position: absolute;
+//   content: "";
+//   border: 1px rgba(255, 255, 255, 0.5) solid;
+//   top: 2.5%;
+//   left: 2.5%;
+//   // top: 0;
+//   // left: 0;
+//   width: 95%;
+//   height: 90%;
+// }
 
 .testimonial-author {
   text-align: right;
