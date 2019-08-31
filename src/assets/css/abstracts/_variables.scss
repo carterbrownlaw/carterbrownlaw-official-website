@@ -12,6 +12,8 @@ $navbgcolor2: rgba(75, 90, 97, 1);
 $generalfontcolor: rgba(10, 9, 8, 1);
 $buttonfontcolor: rgba(234, 224, 213, 1);
 $headerfontcolor: rgba(234, 224, 213, 1);
+$headerheadingfontcolor: $headerfontcolor;
+$headerimportantfontcolor: $headerfontcolor;
 $navfontcolor: rgba(198, 172, 143, 1);
 $footerfontcolor: white;
 $footerfontheadingcolor: grey;
@@ -19,12 +21,15 @@ $footerfontheadingcolor: grey;
 // font families
 $generalfontfamily: Georgia, 'Times New Roman', Times, serif;
 $headerfontfamily: 'Lato', 'Times New Roman', Georgia;
+$headerimportantfontfamily: 'Lato', 'Times New Roman', Georgia;
 $footerfontfamily: Georgia, 'Times New Roman', Times, serif;
 $btnfontfamily: 'BebasNeue', Georgia, 'Times New Roman', Times, serif;
 $btnmainfontfamily: 'BebasNeue', Georgia, 'Times New Roman', Times, serif;
 
 // font sizes
 $fontgeneralsize: 18px;
+$headerfontsize: 16px;
+$headerimportantfontsize: 20px;
 $genh2size: 28px;
 $fontfootersize: 14px;
 $fontfooterheadingsize: 18px;
@@ -39,4 +44,5 @@ $sidespacesmall: 20px;
 $btnshadowcolor: black;
 $btnfontsize: 18px;
 $btnpadding: 10px 25px;
+
 

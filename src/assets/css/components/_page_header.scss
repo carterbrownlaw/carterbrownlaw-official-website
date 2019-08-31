@@ -11,26 +11,48 @@
 
   h1 {
     width: 100%;
-    color: $headerfontcolor;
+    color: $headerheadingfontcolor;
     font-family: $headerfontfamily;
     text-align: center;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
-.header-text-center {
+.header-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 100%;
   position: absolute;
-  transform: translate(-50%, -50%);
-  padding: 0 1em;
-  top: 65%;
-  left: 50%;
+  top: 0;
+}
+
+.header-content {
+  background: rgba(0, 0, 0, 0.4);
+  width: 95%;
+  padding: 0.5em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.header-text-important {
+  text-align: center;
+  color: $headerimportantfontcolor;
+  font-size: $headerimportantfontsize;
+  font-family: $headerimportantfontfamily;
+  margin-bottom: 1vh;
+}
+
+.header-text {
+  text-align: center;
+  color: $headerfontcolor;
+  font-size: $headerfontsize;
 }
 
 .btn-header-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
