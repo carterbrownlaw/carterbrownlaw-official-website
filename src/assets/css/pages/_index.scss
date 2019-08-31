@@ -8,9 +8,6 @@
 }
 
 // testimonials css
-$testimonialfontcolor: $headerfontcolor;
-$testimonialcardcolor: rgb(128,0,0);
-
 .tns-nav {
   text-align: center;
   margin: 2.5px 0;
@@ -38,6 +35,8 @@ $testimonialcardcolor: rgb(128,0,0);
   background: $testimonialcardcolor;
   color: $testimonialfontcolor;
   margin: 10px;
+  font-family: $testimonialcardfontfamily;
+  font-weight: bold;
   // border: 1px grey solid;
 
   display: flex;
@@ -61,7 +60,7 @@ $testimonialcardcolor: rgb(128,0,0);
 .testimonial::after {
   position: absolute;
   content: "";
-  border: 1px white solid;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
   // top: 5%;
   // left: 5%;
   width: 95%;

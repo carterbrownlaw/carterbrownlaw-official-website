@@ -4,11 +4,10 @@
 .testimonial {
   padding: 0.5em 0.75em;
   margin: 2vh 0;
-  background: $background-color2;
-
-  p {
-    color: white;
-  }
+  background: $testimonialcardcolor;
+  color: $testimonialfontcolor;
+  font-family: $testimonialcardfontfamily;
+  font-weight: bold;
 }
 
 .testimonial-author {

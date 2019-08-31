@@ -1,17 +1,24 @@
 @font-face {
-   font-family: 'Raleway';
-   // relative path is broken since I import this in main.scss?
-   src:  url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'BebasNeue';
-   // relative path is broken since I import this in main.scss?
-   src:  url('../fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype');
-}
-
-@font-face {
    font-family: 'Lato';
    // relative path is broken since I import this in main.scss?
    src:  url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+// new
+@font-face {
+   font-family: 'ShadowsIntoLight';
+   // relative path is broken since I import this in main.scss?
+   src:  url('../fonts/ShadowsIntoLight/ShadowsIntoLight-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Oswald';
+   // relative path is broken since I import this in main.scss?
+   src:  url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'PlayfairDisplay';
+   // relative path is broken since I import this in main.scss?
+   src:  url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
 }
