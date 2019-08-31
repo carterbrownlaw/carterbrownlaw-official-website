@@ -2,6 +2,11 @@
 @import '../components/buttons.scss';
 @import '../components/page_header.scss';
 
+// header specific css
+#separator {
+  font-size: smaller;
+}
+
 // testimonials css
 $testimonialfontcolor: $headerfontcolor;
 $testimonialcardcolor: rgb(128,0,0);
