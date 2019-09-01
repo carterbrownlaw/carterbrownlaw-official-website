@@ -60,4 +60,8 @@ $slickblackbrownish: rgba(10, 9, 8, 1);
 $coolbrown: rgba(94, 80, 63, 1);
 $btnred: rgba(151,2,37,1);
 
-
+// media query variables
+$screen-sm-min: 576px;    // landscape phones
+$screen-md-min: 768px;    // tablets
+$screen-lg-min: 992px;    // desktops
+$screen-xl-min: 1200px;   // large desktops

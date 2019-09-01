@@ -9,3 +9,9 @@
 * Partials need to be manually updated. Changing the content file won't affect them. Need to figure out how to achieve that with Webpack
 * You have a heavy font loaded that is not being used.
 * Jquery is laoded but you are not using it.
+
+
+# Credits when you are done:
+* http://www.freeimages.co.uk/linktous.htm
+* Amanda if you end up using her pictures.
+* All the unsplash images.
