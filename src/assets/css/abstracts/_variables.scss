@@ -9,7 +9,7 @@ $navbgcolor1: black;
 // $navbgcolor1: rgba(10, 9, 8, 1);
 $navbgcolor2: $background-color1;
 // $navfontcolor: rgba(198, 172, 143, 1);
-$hamburgercolor: rgba(198, 172, 143, 1);
+$hamburgercolor: rgba(234, 224, 213, 1);
 // $navbgcolor2: rgba(75, 90, 97, 1);
 
 // font colors
@@ -22,12 +22,14 @@ $headerheadingfontcolor: $headerfontcolor;
 $headerimportantfontcolor: $headerfontcolor;
 $footerfontcolor: white;
 $footerfontheadingcolor: grey;
+$logofontcolor: $headerfontcolor;
 $testimonialfontcolor: #232732;
 
 // font families
 $generalfontfamily: Georgia, 'Times New Roman', Times, serif;
 $genh2fontfamily: 'PlayfairDisplay', 'Times New Roman', Times, serif;
 $navfontfamily: 'Oswald', Georgia, 'Times New Roman', Times, serif;
+$logofontfamily: 'PlayfairDisplay', 'Times New Roman', Georgia;
 $headerheadingfontfamily: 'PlayfairDisplay', 'Times New Roman', Georgia;
 $headerfontfamily: 'Lato', 'Times New Roman', Georgia;
 $headerimportantfontfamily: 'Lato', 'Times New Roman', Georgia;
@@ -37,6 +39,7 @@ $btnfontfamily: 'Oswald', Georgia, 'Times New Roman', Times, serif;
 $btnmainfontfamily: 'Oswald', Georgia, 'Times New Roman', Times, serif;
 
 // font sizes
+$logofontsize: 25px;
 $fontgeneralsize: 18px;
 $navfontsize: 16px;
 $headerfontsize: 16px;
