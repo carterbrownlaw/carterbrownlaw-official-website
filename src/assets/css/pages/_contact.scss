@@ -1,5 +1,11 @@
 @import '../components/page_header.scss';
 
+.page-header {
+  background: url('../../images/unsplash/contact-temp.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 #map {
   width: 100%;
   height: 400px;

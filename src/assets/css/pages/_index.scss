@@ -2,6 +2,12 @@
 @import '../components/buttons.scss';
 @import '../components/page_header.scss';
 
+.page-header {
+  background: url('../../images/unsplash/amanda-index-temp2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 // header specific css
 #header-cb-index {
   width: 100%;

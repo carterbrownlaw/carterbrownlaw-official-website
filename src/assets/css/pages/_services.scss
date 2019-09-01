@@ -1,2 +1,8 @@
-@import '../components/page_header.scss';
 @import '../abstracts/variables';
+@import '../components/page_header.scss';
+
+.page-header {
+  background: url('../../images/unsplash/services-temp.jpg');
+  background-position: center;
+  background-size: cover;
+}

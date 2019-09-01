@@ -1,6 +1,12 @@
 @import '../components/page_header.scss';
 @import '../abstracts/variables';
 
+.page-header {
+  background: url('../../images/unsplash/testimonial-temp.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .testimonial {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
