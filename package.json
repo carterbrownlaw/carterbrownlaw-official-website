@@ -8,6 +8,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server",
+    "build": "webpack",
+    "preview": "yarn run build && http-server dist",
     "deploy": "yarn run webpack && cd dist && git add . && git commit -m \"Deploy at $(date)\" && git push origin gh-pages"
   },
   "devDependencies": {
@@ -21,7 +23,6 @@
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.3.1",
-    "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
