@@ -10,6 +10,10 @@
 * You have a heavy font loaded that is not being used.
 * Jquery is laoded but you are not using it.
 
+# Bugs
+* Very subtle bug and probably not a use real case but would like to fix:
+  menu can disappear if you toggle it on and off in mobile screen width. Then expand to desktop screen size.
+  can be fixed with some more javascript that untoggles things on screen resize...
 
 # Credits when you are done:
 * http://www.freeimages.co.uk/linktous.htm

@@ -7,8 +7,10 @@ $hamburger-color: $hamburgercolor;
 
 nav {
   display: grid;
+  // need this?
   grid-template-rows: auto auto;
   grid-template-columns: 0.5fr 0.5fr;
+  // need this end?
   grid-template-areas:
     'logo nav-burger'
     'nav-items nav-items';
@@ -82,3 +84,27 @@ nav {
     transform: scaleX(1);
   }
 }
+
+@media screen and (min-width: $screen-lg-min) {
+  nav {
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-areas: 
+      'logo nav-items';
+  }
+
+  #nav-items-wrap {
+    height: auto;
+    background: $navbgcolor1;
+  }
+
+  #nav-items {
+    a, a:hover {
+      color: $navfontcolor1;
+    }
+  }
+
+  #nav-btn {
+    display: none;
+  }
+}
+

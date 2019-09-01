@@ -21,7 +21,7 @@ export class commonJS {
     activeNavItem.style.borderBottom = '2px solid rgba(151,2,37,1)';
 
     // collapse the navbar items
-    adjustHeight(navItemsWrap, 0);
+    // adjustHeight(navItemsWrap, 0);
 
     // function that expands the navbar
     navBtn.addEventListener('click', () => {
