@@ -51,7 +51,7 @@ $sidespacesmall: 20px;
 // buttons
 $btnshadowcolor: black;
 $btnfontsize: 18px;
-$btnpadding: 10px 25px;
+$btnpadding: 0.5em 1em;
 
 // testimonials
 $testimonialcardcolor: rgb(128,0,0);
@@ -62,6 +62,7 @@ $coolbrown: rgba(94, 80, 63, 1);
 $btnred: rgba(151,2,37,1);
 
 // media query variables
+$screen-xs-min: 320px;    // landscape phones
 $screen-sm-min: 576px;    // landscape phones
 $screen-md-min: 768px;    // tablets
 $screen-lg-min: 992px;    // desktops

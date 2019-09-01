@@ -20,11 +20,15 @@
 
 .header-content {
   background: rgba(0, 0, 0, 0.4);
-  width: 95%;
-  padding: 0.5em;
+  width: 100%;
+  padding: 0.5em 0;
 
-  p {
-    margin: 0;
+  @media screen and (min-width: $screen-sm-min) {
+    padding: 2em 0;
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    padding: 2em 0;
   }
 }
 
@@ -43,8 +47,15 @@
 }
 
 .btn-header-container {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.btn-header-container a:first-child {
+  margin-right: 1em;
+}
+
+.btn-header-container a:last-child {
+  margin-left: 1em;
 }
 
