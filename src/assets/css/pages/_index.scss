@@ -41,29 +41,33 @@
 }
 
 .tns-nav > [aria-controls] {
-  width: 6px;
-  height: 6px;
-  padding: 0;
-  margin: 0 5px;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
   border-radius: 50%;
-  background: grey;
-  border: 0;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: none;
+  padding: 0;
 }
 
-.tns-nav > .tns-nav-active { background: black; }
+.tns-nav > .tns-nav-active { background: #717171; }
 
 #testimonials-container {
   // background: blue;
 }
 
 .testimonial {
+  margin: 10px;
+  padding: 1em 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   background-image: url('../../images/card.jpg');
   background-size: 100% 100%;
   // background: $testimonialcardcolor;
   color: $testimonialfontcolor;
-  margin: 10px;
   font-family: $testimonialcardfontfamily;
   font-weight: bold;
   // border: 1px grey solid;
@@ -76,6 +80,16 @@
   p {
     margin: 10px 0;
     width: 80%;
+  }
+}
+
+#testimonials-section {
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  #testimonials-section {
+    margin: 0 auto;
+    width: 400px;
   }
 }
 

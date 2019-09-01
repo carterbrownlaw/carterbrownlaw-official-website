@@ -35,14 +35,23 @@ main {
 
 // TODO: global css. refactor later when it makes sense
 .page-main {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 $sidespacesmall;
+  margin: 0 auto;
 
   h2 {
     width: 100%;
     text-align: center;
     font-family: $genh2fontfamily;
     font-size: $genh2size;
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  .page-main {
+    width: 80%;
   }
 }
 

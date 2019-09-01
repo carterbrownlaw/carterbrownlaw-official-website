@@ -8,16 +8,18 @@
 }
 
 .testimonial {
+  padding: 1em 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  padding: 0.5em 0.75em;
-  margin: 4vh 0;
+  // padding: 0.5em 0.75em;
+  margin: 4vh auto;
   // background: $testimonialcardcolor;
   background-image: url('../../images/card.jpg');
   background-size: 100% 100%;
   // color: $testimonialfontcolor;
   font-family: $testimonialcardfontfamily;
   font-weight: bold;
+  max-width: 400px;
 }
 
 // .testimonial::after {
