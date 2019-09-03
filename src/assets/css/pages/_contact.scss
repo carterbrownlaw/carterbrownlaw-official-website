@@ -27,11 +27,8 @@
   }
 
   img {
-    width: 50%;
+    // TODO: adjust 
+    max-height: 400px; 
+    max-width: 300px;
   }
 }
-
-// .contact-card-num {
-//   color: $generalfontcolor;
-// }
-
