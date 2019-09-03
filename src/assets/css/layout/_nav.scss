@@ -26,13 +26,8 @@ nav {
 }
 
 #logo-wrap {
-  grid-area: logo;
-}
-
-.nav-top-wrap {
-  display: flex;
-  align-items: center;
   padding: 0.5em 1em;
+  grid-area: logo;
 }
 
 #logo {
@@ -48,6 +43,7 @@ nav {
 
 #nav-btn-wrap {
   grid-area: nav-burger;
+  padding: 0.5em 1em;
   justify-self: end;
 }
 
@@ -105,6 +101,7 @@ nav {
 @media screen and (min-width: $screen-lg-min) {
   nav {
     grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
       'logo nav-items';
   }
@@ -122,6 +119,10 @@ nav {
 
   #nav-btn {
     display: none;
+  }
+  
+  #nav-btn-wrap {
+    padding: 0;
   }
 }
 
