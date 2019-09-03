@@ -22,12 +22,12 @@ for (let i = 0; i < numTestimonials; i++) {
 
 
 const slider = tns({
-  // container: '#testimonials-container',
   container: testiContainer,
   items: 1,
   slideBy: 'page',
   autoplay: true,
   speed: 400,
+  autoHeight: true,
   controls: false,
   navPosition: 'bottom',
   mouseDrag: true,
