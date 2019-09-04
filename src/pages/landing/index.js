@@ -3,23 +3,16 @@ import '../../assets/css/main.scss';
 import '../../assets/css/pages/_index.scss';
 
 // JS imports
-import { importTestimonials } from '../../javascript/helpers.js';
 import { commonJS } from '../../javascript/commonJS.js';
 import { tns } from '../../../node_modules/tiny-slider/src/tiny-slider.js';
 
 const mainContainer = new commonJS();
-
-const testimonialFiles = importTestimonials();
+const testimonials = require('../../assets/content/testimonials/index.json');
 const testiContainer = document.getElementById('testimonials-container');
-const numTestimonials = testimonialFiles.length;
 
-// testimonialFiles.forEach((t) => {
-//   testiContainer.appendChild(createTestimonial(t));
-// });
-for (let i = 0; i < numTestimonials; i++) {
-  testiContainer.appendChild(createTestimonial(testimonialFiles[i]));
-}
-
+testimonials.all.forEach((t) => {
+  testiContainer.appendChild(createTestimonial(t));
+});
 
 const slider = tns({
   container: testiContainer,
@@ -27,7 +20,6 @@ const slider = tns({
   slideBy: 'page',
   autoplay: true,
   speed: 600,
-  autoHeight: true,
   controls: false,
   navPosition: 'bottom',
   mouseDrag: true,

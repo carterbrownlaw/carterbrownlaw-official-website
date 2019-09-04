@@ -2,15 +2,13 @@ import '../../assets/css/main.scss';
 import '../../assets/css/pages/_testimonials.scss';
 
 // JS imports
-import { importTestimonials } from '../../javascript/helpers.js';
 import { commonJS } from '../../javascript/commonJS.js';
 
 const mainContainer = new commonJS(false);
 
-const testimonialFiles = importTestimonials();
-
 const testiContainer = document.getElementById('testimonial-container');
-testimonialFiles.forEach((t) => {
+const testimonials = require('../../assets/content/testimonials/all.json');
+testimonials.all.forEach((t) => {
   testiContainer.appendChild(createTestimonial(t));
 });
 
