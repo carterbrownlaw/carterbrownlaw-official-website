@@ -9,20 +9,14 @@
 }
 
 // header specific css
-#header-cb-index {
-  margin-bottom: 2em;
+.header-h1 {
+  padding-bottom: 0.2em;
 }
 
 #cb-logo {
  font-size: 3em;
  font-weight: normal;
-}
-
-#header-cb-h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  border-bottom: 1px $headerfontcolor solid;
-  font-size: 1.5em;
+ margin-bottom: 0;
 }
 
 #header-cb-p {
@@ -172,7 +166,7 @@
 
   img {
     // TODO: adjust dimension correctly
-   max-height: 400px; 
+    max-height: 400px; 
     max-width: 300px;
     margin: 0 auto;
     display: block;

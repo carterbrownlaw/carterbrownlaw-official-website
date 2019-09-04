@@ -8,18 +8,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  h1 {
-    width: 100%;
-    color: $headerheadingfontcolor;
-    font-family: $headerheadingfontfamily;
-    text-align: center;
-    margin-bottom: 0;
-  }
+  color: $headerheadingfontcolor;
+  font-family: $headerheadingfontfamily;
+  text-align: center;
 
   @media screen and (min-width: $screen-xl-min) {
     height: 70vh
   }
+}
+
+.header-h1 {
+  padding-bottom: 0.5em;
+  margin: 0;
+  border-bottom: 1px fade-out($headerfontcolor, 0.4) solid;
 }
 
 .header-content {
@@ -36,6 +37,18 @@
   }
 }
 
+.header-content-wrap {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  max-width: 475px;
+  padding: 0 2em;
+
+  @media screen and (min-width: $screen-lg-min) {
+    max-width: 550px;
+  }
+}
+
+
 .header-text-important {
   text-align: center;
   color: $headerimportantfontcolor;
@@ -48,6 +61,7 @@
   text-align: center;
   color: $headerfontcolor;
   font-size: $headerfontsize;
+  font-family: $headerimportantfontfamily;
 }
 
 .btn-header-container {
