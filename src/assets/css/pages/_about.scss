@@ -13,10 +13,13 @@
 }
 
 .bio {
+  display: grid;
   text-align: justify;
+  margin-bottom: 2em;
 
   h3 {
     text-align: center;
+    font-size: 2em;
   }
 
   img {
@@ -27,7 +30,15 @@
   }
 }
 
-$triangle-size: 15px;
+@media screen and (min-width: $screen-lg-min) {
+  .bio {
+    grid-template-columns: 0.5fr 0.5fr;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+// $triangle-size: 15px;
 
 // .section-start {
 //   position: relative;
