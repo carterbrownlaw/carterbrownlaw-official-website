@@ -3,7 +3,7 @@
 @import '../components/page_header.scss';
 
 .page-header {
-  background: url('../../images/unsplash/amanda-index-temp2.jpg');
+  background: url('../../images/unsplash/amanda-index-temp1.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -67,7 +67,9 @@
   padding: 1em 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  background-image: url('../../images/card.jpg');
+  // background-image: url('../../images/card.jpg');
+  // needs a nice color and opacity so that it looks better
+  background-image: url('../../images/patterns/exclusive_paper/exclusive_paper.png');
   background-size: 100% 100%;
   // background: $testimonialcardcolor;
   color: $testimonialfontcolor;
