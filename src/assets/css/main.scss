@@ -48,13 +48,12 @@ main {
     font-size: $genh2size;
     // border-bottom: 2px $accentcolor solid;
   }
-}
 
-@media screen and (min-width: $screen-sm-min) {
-  .page-main {
+  @media screen and (min-width: $screen-sm-min) {
     width: 80%;
   }
 }
+
 
 section {
   img {

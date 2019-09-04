@@ -8,6 +8,10 @@
 }
 
 #testimonial-container { 
+  @media screen and (min-width: $screen-lg-min) {
+    column-count: 3;
+    column-gap: 1em;
+  }
 }
 
 .testimonial {
@@ -20,6 +24,10 @@
   font-family: $testimonialcardfontfamily;
   font-weight: bold;
   max-width: 400px;
+
+  @media screen and (min-width: $screen-lg-min) {
+    display: inline-block;
+  }
 }
 
 .testimonial::before {
@@ -33,17 +41,6 @@
   width: 100%;
   height: 100%;
   z-index: -10;
-}
-
-@media screen and (min-width: $screen-lg-min) {
-  .testimonial {
-    display: inline-block;
-  }
-
-  #testimonial-container {
-    column-count: 3;
-    column-gap: 1em;
-  }
 }
 
 .testimonial-author {

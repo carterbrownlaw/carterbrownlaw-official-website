@@ -23,6 +23,13 @@ nav {
     color: $navfontcolor;
   }
 
+  @media screen and (min-width: $screen-lg-min) {
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      'logo nav-items';
+  }
+
 }
 
 #logo-wrap {
@@ -45,10 +52,18 @@ nav {
   grid-area: nav-burger;
   padding: 0.5em 1em;
   justify-self: end;
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding: 0;
+  }
 }
 
 #nav-btn {
   padding: 25px 0;
+
+  @media screen and (min-width: $screen-lg-min) {
+    display: none;
+  }
 }
 
 #nav-items-wrap {
@@ -58,6 +73,11 @@ nav {
   height: 0;
   -webkit-transition: height 0.2s ease;
   transition: height 0.2s ease;
+
+  @media screen and (min-width: $screen-lg-min) {
+    height: auto;
+    background: $navbgcolor1;
+  }
 }
 
 #nav-items {
@@ -81,7 +101,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     background-color: $btnred;
     visibility: hidden;
@@ -96,33 +116,11 @@ nav {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-}
 
-@media screen and (min-width: $screen-lg-min) {
-  nav {
-    grid-template-columns: 0.3fr 0.7fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-      'logo nav-items';
-  }
-
-  #nav-items-wrap {
-    height: auto;
-    background: $navbgcolor1;
-  }
-
-  #nav-items {
+  @media screen and (min-width: $screen-lg-min) {
     a, a:hover {
       color: $navfontcolor1;
     }
-  }
-
-  #nav-btn {
-    display: none;
-  }
-  
-  #nav-btn-wrap {
-    padding: 0;
   }
 }
 

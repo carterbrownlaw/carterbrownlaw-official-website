@@ -92,10 +92,7 @@
 
 #testimonials-section {
   text-align: center;
-}
-
-@media screen and (min-width: $screen-sm-min) {
-  #testimonials-section {
+  @media screen and (min-width: $screen-sm-min) {
     margin: 0 auto;
     width: 400px;
   }

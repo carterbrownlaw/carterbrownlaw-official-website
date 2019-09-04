@@ -28,10 +28,8 @@
     max-height: 400px; 
     max-width: 300px;
   }
-}
 
-@media screen and (min-width: $screen-lg-min) {
-  .bio {
+  @media screen and (min-width: $screen-lg-min) {
     grid-template-columns: 0.5fr 0.5fr;
     align-items: center;
     text-align: left;

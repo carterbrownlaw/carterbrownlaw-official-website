@@ -16,10 +16,8 @@
     text-align: center;
     margin-bottom: 0;
   }
-}
 
-@media screen and (min-width: $screen-xl-min) {
-  .page-header {
+  @media screen and (min-width: $screen-xl-min) {
     height: 70vh
   }
 }
