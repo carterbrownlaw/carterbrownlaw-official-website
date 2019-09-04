@@ -67,25 +67,27 @@
   padding: 1em 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  // background-image: url('../../images/card.jpg');
-  // needs a nice color and opacity so that it looks better
-  background-image: url('../../images/patterns/exclusive_paper/exclusive_paper.png');
-  background-size: 100% 100%;
-  // background: $testimonialcardcolor;
   color: $testimonialfontcolor;
   font-family: $testimonialcardfontfamily;
   font-weight: bold;
-  // border: 1px grey solid;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;// text-align: center;
+  justify-content: center;
   align-items: center;
+  z-index: 1;
+}
 
-  p {
-    margin: 10px 0;
-    width: 80%;
-  }
+.testimonial::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url('../../images/card-cmp.jpg');
+  opacity: 0.7;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
 
 #testimonials-section {
@@ -101,21 +103,16 @@
 
 .testimonial-text {
   text-align: left;
+  margin: 10px 0;
+  width: 80%;
 }
 
 .testimonial-author {
   text-align: right;
+  margin: 10px 0;
+  width: 80%;
 }
 
-// .testimonial::after {
-//   position: absolute;
-//   content: "";
-//   border: 1px rgba(255, 255, 255, 0.5) solid;
-//   // top: 5%;
-//   // left: 5%;
-//   width: 95%;
-//   height: 90%;
-// }
 
 // services css
 #services-section {
