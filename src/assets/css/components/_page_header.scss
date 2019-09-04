@@ -19,7 +19,23 @@
 .header-h1 {
   padding-bottom: 0.5em;
   margin: 0;
-  border-bottom: 1px fade-out($headerfontcolor, 0.4) solid;
+  position: relative;
+}
+
+.header-h1:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: fade-out($headerfontcolor, 0.4);
+  animation: border-expand 1s 1;
+}
+
+@keyframes border-expand {
+  0% { -webkit-transform: scaleX(0); transform: scaleX(0);}
+  100% {-webkit-transform: scaleX(1); transform: scaleX(1);}
 }
 
 .header-content {
