@@ -1,3 +1,4 @@
+@import '../abstracts/mixins.scss';
 @import '../abstracts/variables.scss';
 @import '../components/buttons.scss';
 @import '../components/page_header.scss';
@@ -31,9 +32,12 @@
 
   @media screen and (min-width: $screen-lg-min) {
     grid-template-columns: 0.5fr 0.5fr;
-    align-items: center;
     text-align: left;
   }
+}
+
+.bio-content {
+  @include top-bottom-trim;
 }
 
 // $triangle-size: 15px;
