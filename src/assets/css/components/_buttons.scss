@@ -12,24 +12,14 @@
   text-align: center;
   text-decoration: none;
   text-shadow: 0px 1px 0px #3d768a;
-  -moz-box-shadow:  0px 10px 14px -7px $btnshadowcolor;
-  -webkit-box-shadow:  0px 10px 14px -7px $btnshadowcolor;
-  box-shadow: 0px 10px 14px -7px $btnshadowcolor;
+  -moz-box-shadow:  0px 10px 14px -7px #151515;
+  -webkit-box-shadow:  0px 10px 14px -7px #151515;
+  box-shadow: 0px 10px 14px -7px #151515;
 
   // colors
   color: $buttonfontcolor;
   background: rgba(169,3,41,1);
-  background: -moz-linear-gradient(46deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
-  background: -webkit-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
-  background: linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );
-}
-
-// TODO: delete font family things...
-.btn {
+  // background: $btncolor;
   font-family: $btnfontfamily;
 }
 
@@ -37,18 +27,10 @@
   min-width: 120px;
   margin: 0 auto;
   margin-top: 1em;
-  font-family: $btnmainfontfamily;
 }
 
 .btn:hover, .btn-main:hover {
   background: rgba(151,2,37,1);
-  background: -moz-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(151,2,37,1)), color-stop(44%, rgba(126,2,31,1)), color-stop(100%, rgba(92,0,21,1)));
-  background: -webkit-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
-  background: linear-gradient(45deg, rgba(151,2,37,1) 0%, rgba(126,2,31,1) 44%, rgba(92,0,21,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#970225', endColorstr='#5c0015', GradientType=1 );
 }
 
 .btn:active, .btn-main:active {
