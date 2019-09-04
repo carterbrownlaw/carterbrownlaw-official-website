@@ -7,7 +7,11 @@
   background-size: cover;
 }
 
+#testimonial-container { 
+}
+
 .testimonial {
+  margin: 0 auto;
   padding: 1em 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -20,6 +24,17 @@
   font-family: $testimonialcardfontfamily;
   font-weight: bold;
   max-width: 400px;
+}
+
+@media screen and (min-width: $screen-lg-min) {
+  .testimonial {
+    display: inline-block;
+  }
+
+  #testimonial-container {
+    column-count: 3;
+    column-gap: 1em;
+  }
 }
 
 // .testimonial::after {
