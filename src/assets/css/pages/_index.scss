@@ -33,6 +33,10 @@
   font-size: smaller;
 }
 
+// comapny summary css
+#company-summary-section {
+}
+
 // testimonials css
 .tns-nav {
   text-align: center;
@@ -83,6 +87,7 @@
 }
 
 #testimonials-section {
+  text-align: center;
 }
 
 @media screen and (min-width: $screen-sm-min) {
@@ -111,6 +116,10 @@
 // }
 
 // services css
+#services-section {
+  text-align: center;
+}
+
 #services-container {
   display: flex;
   flex-direction: row;
@@ -163,6 +172,7 @@
 // about css
 .about-subsection {
   margin: 5vh 0;
+  text-align: center;
 
   img {
     // TODO: adjust dimension correctly
