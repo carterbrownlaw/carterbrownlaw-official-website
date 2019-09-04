@@ -1,3 +1,4 @@
+// removes margin of first and last child of an element
 @mixin top-bottom-trim {
   > *:first-child { margin-top: 0; }
   > *:last-child { margin-bottom: 0; }

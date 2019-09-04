@@ -41,17 +41,17 @@ main {
   padding: 0 $sidespacesmall;
   margin: 0 auto;
 
-  h2 {
-    width: 100%;
-    text-align: center;
-    font-family: $genh2fontfamily;
-    font-size: $genh2size;
-    // border-bottom: 2px $accentcolor solid;
-  }
-
   @media screen and (min-width: $screen-sm-min) {
     width: 80%;
   }
+}
+
+.main-h2 {
+  width: 100%;
+  text-align: center;
+  font-family: $genh2fontfamily;
+  font-size: $genh2size;
+  text-transform: uppercase;
 }
 
 .page-main-section {
