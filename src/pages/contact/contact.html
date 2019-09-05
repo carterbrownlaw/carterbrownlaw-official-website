@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Carter Brown Law Official Website">
-  <meta name="author" content="Stoyan Shukerov">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="theme-color" content="#000000">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-  <title>Carter Brown Law</title>
-</head>
-<body>
-  <header>
-    ${require('../../partials/_navbar.html')}
-  </header>
-  <main id='contact'>
-  <div class='page-header'>
-    <div class='header-content'>
-      <div class='header-content-wrap'>
-        <h1 class='header-h1'>Contact Us</h1>
-        <div class='header-text-important'>
-          <p>We can help! Contact us:</p>
-        </div>
-        <div class='header-text'> 
-          <a href='tel:${carter_brown_info.company.emergency_phone}' class='btn'>${carter_brown_info.company.emergency_phone}</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Carter Brown Law Official Website">
+    <meta name="author" content="Stoyan Shukerov">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <title>Carter Brown Law</title>
+  </head>
+  <body>
+    <header>
+      ${require('../../partials/_navbar.html')}
+    </header>
+    <main id='contact'>
+    <div class='page-header'>
+      <div class='header-content'>
+        <div class='header-content-wrap'>
+          <h1 class='header-h1'>Contact Us</h1>
+          <div class='header-text-important'>
+            <p>We can help! Contact us:</p>
+          </div>
+          <div class='header-text'> 
+            <a href='tel:${carter_brown_info.company.emergency_phone}' class='btn'>${carter_brown_info.company.emergency_phone}</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class='page-main'>
-    <!-- office section -->
-    <section class='page-main-section'>
-      <div class='section-content'>
-        <h2 class='main-h2'>Carter Brown Office</h1>
-        <img src=${require('../../assets/images/unsplash/office-temp.jpg')}></img>
-        <div>
-          <span class='icon icon-address'></span>
-          <strong>Address:</strong>
-          <span>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</span>
-        </div>
-        <div>
-          <span class='icon icon-phone'></span>
-          <strong>Office number:</strong>
-          <a href='tel:${carter_brown_info.company.phone}' class='contact-card-num'>${carter_brown_info.company.phone}</a>
-        </div>
-        <div>
-          <span class='icon icon-fax'></span>
-          <strong>Fax:</strong>
-          <a href='fax:${carter_brown_info.company.fax}' class='contact-card-num'>${carter_brown_info.company.fax}</a>
+    <div class='page-main'>
+      <!-- office section -->
+      <h2 class='main-h2 section-content' id='office-heading'>Carter • Brown Office</h1>
+      <section class='page-main-section' id='office-section'>
+        <div class='section-content'>
+          <img src=${require('../../assets/images/unsplash/office-temp.jpg')}></img>
+          <table class='contact-info'>
+            <tr>
+              <td><span class='icon icon-address'></span></td>
+              <td><em>Address</em>:</td>
+              <td>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</td>
+            </tr>
+            <tr>
+              <td><span class='icon icon-phone'></span></td>
+              <td><em>Office</em>:</td>
+              <td>
+                <a href='tel:${carter_brown_info.company.phone}'>${carter_brown_info.company.phone}</a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class='icon icon-fax'></span></td>
+              <td><em>Fax</em>:</td>
+              <td>
+                <a href='fax:${carter_brown_info.company.fax}'>${carter_brown_info.company.fax}</a>
+              </td>
+            </tr>
+          </table>
         </div>
         <!-- contains google map -->
-        <div id='map'></div>
-      </div>
-    </section>
-    <!-- contact card section -->
-    <section class='page-main-section' id='contact-card-section'>
-      <!-- angela contact card -->
-      <div class='section-content contact-card'>
-        <!-- <div class='contact-card-content-wrap'> -->
+        <div class='section-content'>
+          <div id='map'></div>
+        </div>
+      </section>
+      <!-- contact card section -->
+      <section class='page-main-section' id='contact-card-section'>
+        <!-- angela contact card -->
+        <div class='section-content contact-card'>
+          <!-- <div class='contact-card-content-wrap'> -->
           <h2 class='main-h2 contact-card-h2'>Contact Angela</h2>
           <img src=${require('../../assets/images/unsplash/portrait_angela.jpg')} class='portrait-img'></img>
-          <div class='contact-card-info'>
+          <div class='contact-info'>
             <span class='icon icon-phone'></span>
             <strong>Phone:</strong>
             <a href='tel:${carter_brown_info.employees.angela.phone}' class='contact-card-num'>${carter_brown_info.employees.angela.phone} </a>
           </div>
-          <div class='contact-card-info'>
+          <div class='contact-info'>
             <span class='icon icon-email'></span>
             <strong>Email:</strong>
             <a href='mailto:${carter_brown_info.employees.angela.email}' class='contact-card-email'>${carter_brown_info.employees.angela.email}</a>
           </div>
-        <!-- </div> -->
-      </div>
-      <!-- steven contact card -->
-      <div class='section-content contact-card'>
-        <!-- <div class='contact-card-content-wrap'> -->
+          <!-- </div> -->
+        </div>
+        <!-- steven contact card -->
+        <div class='section-content contact-card'>
+          <!-- <div class='contact-card-content-wrap'> -->
           <h2 class='main-h2 contact-card-h2'>Contact Steven</h2>
           <img src=${require('../../assets/images/unsplash/portrait_steven.jpg')} class='portrait-img'></img>
-          <div class='contact-card-info'>
+          <div class='contact-info'>
             <span class='icon icon-phone'></span>
             <strong>Phone:</strong>
             <a href='tel:${carter_brown_info.employees.steven.phone}' class='contact-card-num'>${carter_brown_info.employees.steven.phone}</a>
           </div>
-          <div class='contact-card-info'>
+          <div class='contact-info'>
             <span class='icon icon-email'></span>
             <strong>Email:</strong>
             <a href='mailto:${carter_brown_info.employees.steven.email}' class='contact-card-email'>${carter_brown_info.employees.steven.email}</a>
           </div>
-        <!-- </div> -->
-      </div>
-    </section>
-  </div>
-  </main>
-  ${require('../../partials/_footer.html')}
-</body>
+          <!-- </div> -->
+        </div>
+      </section>
+    </div>
+    </main>
+    ${require('../../partials/_footer.html')}
+  </body>
 </html>
