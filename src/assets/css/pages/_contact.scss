@@ -19,17 +19,59 @@
 }
 
 .contact-card {
-  text-align: left;
-  color: $generalfontcolor;
+  position: relative;
+  max-width: 400px;
 
-  h2 {
-    text-align: left;
+  * {
+    display: inline-block;
   }
 
-  img {
-    // TODO: adjust 
-    max-height: 400px; 
-    max-width: 300px;
+  &-h2 {
+    text-align: left;
+    width: auto;
+    display: inline-block;
+  }
+    &:before {
+      position: absolute;
+      // top: 20%;
+      top: 5%;
+      left: -20px;
+      content: "";
+      height: 100%;
+      width: 2px;
+      background: $accentcolor;
+      transform: scaleY(0.9);
+    }
+
+  @media screen and (min-width: $screen-md-min) {
+    margin: 0;
+    // border-left: 2px solid $accentcolor;
+    // padding-left: 1em;
+    // justify-content: center;
+  }
+}
+
+
+.portrait-img {
+  max-height: 400px; 
+  max-width: 300px;
+}
+
+#contact-card-section {
+  display: grid;
+  background: $sectionbgcolor1;
+
+  @media screen and (min-width: $screen-md-min) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+
+    :first-child {
+      justify-self: end;        
+    }
+
+    :last-child {
+      justify-self: start;        
+    }
   }
 }
 
@@ -48,7 +90,6 @@
 .icon-email {
   background-image: url('../../images/icons/mail.svg');
 }
-
 
 .icon {
   padding: 8px 8px;
