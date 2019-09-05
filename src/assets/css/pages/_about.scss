@@ -7,39 +7,43 @@
   background: url('../../images/unsplash/about-temp-cmp.jpg');
   background-position: center;
   background-size: cover;
-
-  h1 {
-    margin-bottom: 1em;
-  }
 }
 
 .bio {
+  margin-top: 4em;
   display: grid;
   text-align: justify;
-  margin-bottom: 2em;
-
-  h3 {
-    text-align: center;
-    font-size: 2em;
-  }
-
-  img {
-    display: block;
-    margin: 0 auto;
-    max-height: 400px; 
-    max-width: 300px;
-  }
 
   @media screen and (min-width: $screen-lg-min) {
+    max-width: 80%;
     grid-template-columns: 0.5fr 0.5fr;
     text-align: left;
   }
+}
+
+.bio-h3 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.bio-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 400px; 
+  max-width: 300px;
 }
 
 .bio-content {
   @include top-bottom-trim;
 }
 
+#about-angela {
+  background: $sectionbgcolor1;
+}
+
+#about-steven {
+  background: $sectionbgcolor2;
+}
 // $triangle-size: 15px;
 
 // .section-start {

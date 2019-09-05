@@ -9,6 +9,8 @@
 
 #testimonial-container { 
   @media screen and (min-width: $screen-lg-min) {
+    max-width: 90%;
+    margin: 0 auto;
     column-count: 2;
     column-gap: 1em;
   }

@@ -2,6 +2,9 @@
 $background-color1: rgba(234, 224, 213, 1);
 $background-color2: rgba(34, 51, 59, 1);
 $footerbgcolor: black;
+// $sectionbgcolor1: complement($background-color1);
+$sectionbgcolor1: darken($background-color1, 10%);
+$sectionbgcolor2: darken($sectionbgcolor1, 10%);
 
 // nav colors
 $navbgcolor1: black;
@@ -43,7 +46,7 @@ $fontgeneralsize: 18px;
 $navfontsize: 16px;
 $headerfontsize: 16px;
 $headerimportantfontsize: 20px;
-$genh2size: 28px;
+$genh2size: 2.2em;
 $fontfootersize: 14px;
 $fontfooterheadingsize: 18px;
 

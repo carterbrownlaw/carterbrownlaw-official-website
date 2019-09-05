@@ -18,35 +18,39 @@
     <div class='header-content'>
       <div class='header-content-wrap'>
         <h1 class='header-h1'>About Us</h1>
-        <div class='btn-header-container'>
-          <a href='#about-angela' class='btn'>ABOUT ANGELA</a>
-          <a href='#about-steven' class='btn'>ABOUT STEVEN</a>
-        </div>
+      </div>
+      <div class='btn-header-container'>
+        <a href='#about-angela' class='btn'>ABOUT ANGELA</a>
+        <a href='#about-steven' class='btn'>ABOUT STEVEN</a>
       </div>
     </div>
   </div>
   <div class='page-main'>
     <section class='page-main-section'>
-      <h2 class='main-h2'>Carter Brown Law</h2>
-      <!-- TODO: needs to be in a partial -->
-      <p>We are dedicated to helping people facing all types of criminal charges and ensuring that our clients recieve fair treatment. We are passionate about protecting our clients’ rights and upholding the United States Constitution. Our law firm handles felony, misdemeanor, DUI, juvenile and drug offense cases. We practice criminal defense throughout the counties of Lake, Mendocino, Ukiah, Napa and Sonoma. When your freedom is at stake, hiring the right attorney is essential, and we are here to help.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+      <div class='section-content'>
+        <h2 class='main-h2'>Carter Brown Law</h2>
+        <!-- TODO: needs to be in a partial -->
+        <p>We are dedicated to helping people facing all types of criminal charges and ensuring that our clients recieve fair treatment. We are passionate about protecting our clients’ rights and upholding the United States Constitution. Our law firm handles felony, misdemeanor, DUI, juvenile and drug offense cases. We practice criminal defense throughout the counties of Lake, Mendocino, Ukiah, Napa and Sonoma. When your freedom is at stake, hiring the right attorney is essential, and we are here to help.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+      </div>
     </section>
-    <section class='page-main-section'>
-      <h2 class='main-h2'>Our Team</h2>
-      <div class='bio' id='about-angela'>
+    <section class='page-main-section' id='about-angela'>
+      <h2 class='main-h2 page-main-header'>Our Team</h2>
+      <div class='section-content bio'>
         <div class='bio-header'>
-          <img src=${require('../../assets/images/unsplash/portrait_angela.jpg')}></img>
-          <h3>Angela Carter</h3>
+          <img src=${require('../../assets/images/unsplash/portrait_angela.jpg')} class='bio-img'></img>
+          <h3 class='bio-h3'>Angela Carter</h3>
         </div>
         <div class='bio-content'>
           ${require('../../partials/_angela_bio.html')}
         </div>
       </div>
-      <div class='bio' id='about-steven'>
+    </section>
+    <section class='page-main-section' id='about-steven'>
+      <div class='section-content bio'>
         <div class='bio-header'>
-          <img src=${require('../../assets/images/unsplash/portrait_steven.jpg')}></img>
-          <h3>Steven Brown</h3>
+          <img src=${require('../../assets/images/unsplash/portrait_steven.jpg')} class='bio-img'></img>
+          <h3 class='bio-h3'>Steven Brown</h3>
         </div>
         <div class='bio-content'>
           ${require('../../partials/_steven_bio.html')}
