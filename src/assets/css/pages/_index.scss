@@ -106,8 +106,18 @@
 
 
 // services css
+#test-serv-section {
+  display: grid;
+  background: $sectionbgcolor2;
+
+  .main-h2 {
+    background: $background-color1; 
+  }
+}
+
 #services-section {
   text-align: center;
+
 }
 
 #services-container {
@@ -121,8 +131,8 @@
 
 .service-block {
   flex-grow: 1;
-  width: 48%;
-  margin: 1.5% 1%;
+  // width: 48%;
+  // margin: 1.5% 1%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,9 +165,14 @@
 // }
 
 // about css
-.about-subsection {
-  margin: 5vh 0;
+#about-section {
+  background: $sectionbgcolor3;
   text-align: center;
+  padding: 2em 0;
+
+  .section-content {
+    margin-bottom: 2em;
+  }
 
   img {
     // TODO: adjust dimension correctly
@@ -166,4 +181,28 @@
     margin: 0 auto;
     display: block;
   }
+    .main-h2 {
+      background: $sectionbgcolor1;
+      max-height: 2.5em;
+    }
+
+  @media screen and (min-width: $screen-lg-min) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
 }
+
+// .about-subsection {
+//   // margin: 5vh 0;
+//   text-align: center;
+
+//   img {
+//     // TODO: adjust dimension correctly
+//     max-height: 400px; 
+//     max-width: 300px;
+//     margin: 0 auto;
+//     display: block;
+//   }
+// }

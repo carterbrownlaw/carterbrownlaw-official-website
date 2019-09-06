@@ -5,6 +5,7 @@ $footerbgcolor: black;
 // $sectionbgcolor1: complement($background-color1);
 $sectionbgcolor1: darken($background-color1, 10%);
 $sectionbgcolor2: darken($sectionbgcolor1, 10%);
+$sectionbgcolor3: darken($sectionbgcolor2, 10%);
 
 // nav colors
 $navbgcolor1: black;
@@ -67,6 +68,7 @@ $slickblackbrownish: rgba(10, 9, 8, 1);
 $coolbrown: rgba(94, 80, 63, 1);
 $btnred: rgba(151,2,37,1);
 $accentcolor: $btnred;
+$navybluedark: #00005e;
 
 // media query variables
 $screen-xs-min: 320px;    // landscape phones
