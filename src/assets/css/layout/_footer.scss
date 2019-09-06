@@ -24,8 +24,9 @@ footer {
 }
 
 #footer-big {
-  font-size: 18px;
+  // font-size: 18px;
 }
+
 @media screen and (min-width: $screen-xl-min) {
   #footer-big {
     flex: 0.35;
