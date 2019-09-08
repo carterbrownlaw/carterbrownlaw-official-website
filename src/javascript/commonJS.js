@@ -18,7 +18,7 @@ export class commonJS {
 
     // visual selection of nav-item
     const activeNavItem = document.getElementById(`nav-item-${this.activePage}`);
-    activeNavItem.style.borderBottom = '2px solid rgba(151,2,37,1)';
+    activeNavItem.classList.add('active-nav-item');
 
     // collapse the navbar items
     // adjustHeight(navItemsWrap, 0);

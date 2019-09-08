@@ -35,6 +35,8 @@ nav {
 #logo-wrap {
   padding: 0.5em 1em;
   grid-area: logo;
+  display: flex;
+  align-items: center;
 }
 
 #logo {
@@ -103,7 +105,7 @@ nav {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: $btnred;
+    background-color: $accentcolor;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -124,3 +126,6 @@ nav {
   }
 }
 
+.active-nav-item {
+  border-bottom: 2px solid $accentcolor;
+}

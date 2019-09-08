@@ -1,14 +1,14 @@
 // background colors
 $background-color1: rgba(234, 224, 213, 1);
 $background-color2: rgba(34, 51, 59, 1);
-$footerbgcolor: black;
-// $sectionbgcolor1: complement($background-color1);
+// $footerbgcolor: #151515;
+$footerbgcolor: darken($background-color1, 80%);
 $sectionbgcolor1: darken($background-color1, 10%);
 $sectionbgcolor2: darken($sectionbgcolor1, 10%);
 $sectionbgcolor3: darken($sectionbgcolor2, 10%);
 
 // nav colors
-$navbgcolor1: black;
+$navbgcolor1: #151515;
 // $navbgcolor1: rgba(242, 233, 228, 1);
 // $navbgcolor1: rgba(10, 9, 8, 1);
 $navbgcolor2: $background-color1;
@@ -19,7 +19,7 @@ $hamburgercolor: rgba(234, 224, 213, 1);
 // font colors
 $generalfontcolor: rgba(10, 9, 8, 1);
 $buttonfontcolor: rgba(234, 224, 213, 1);
-$navfontcolor: black;
+$navfontcolor: #151515;
 $navfontcolor1: rgba(234, 224, 213, 1);
 $headerfontcolor: rgba(234, 224, 213, 1);
 $headerheadingfontcolor: $headerfontcolor;
@@ -58,7 +58,8 @@ $sidespacesmall: 20px;
 $btnshadowcolor: black;
 $btnfontsize: 18px;
 $btnpadding: 0.5em 1em;
-$btncolor: rgba(151,2,37,1);
+// $btncolor: rgba(151,2,37,1); // the cool red
+// $btncolor: #225560;
 
 // testimonials
 // $testimonialcardcolor: rgb(209,177,138);
@@ -67,7 +68,9 @@ $btncolor: rgba(151,2,37,1);
 $slickblackbrownish: rgba(10, 9, 8, 1);
 $coolbrown: rgba(94, 80, 63, 1);
 $btnred: rgba(151,2,37,1);
-$accentcolor: $btnred;
+// $accentcolor: $btnred;
+// $accentcolor: #4169E1;
+$accentcolor: #225560;
 $navybluedark: #00005e;
 
 // media query variables
@@ -76,3 +79,15 @@ $screen-sm-min: 576px;    // landscape phones
 $screen-md-min: 768px;    // tablets
 $screen-lg-min: 992px;    // desktops
 $screen-xl-min: 1200px;   // large desktops
+
+
+// colorscheme one
+// $btncolor: rgba(151,2,37,1); // the cool red
+// $accentcolor: rgba(151,2,37,1);
+// $header-banner-color: fade-out(black, 0.7);
+
+// colorsceme two
+$btncolor: #225560;
+$accentcolor: #225560;
+$header-banner-color: fade-out(darken($accentcolor, 20%), 0.7);
+

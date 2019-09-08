@@ -18,7 +18,7 @@
 
   // colors
   color: $buttonfontcolor;
-  background: rgba(169,3,41,1);
+  background: $btncolor;
   // background: $btncolor;
   font-family: $btnfontfamily;
 }
@@ -30,7 +30,8 @@
 }
 
 .btn:hover, .btn-main:hover {
-  background: rgba(151,2,37,1);
+  background: darken($btncolor, 5%);
+  // rgba(151,2,37,1);
 }
 
 .btn:active, .btn-main:active {
