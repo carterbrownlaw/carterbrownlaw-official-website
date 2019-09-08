@@ -5,20 +5,27 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    index: './src/pages/landing/index.js',
-    about: './src/pages/about/about.js',
-    contact: './src/pages/contact/contact.js',
-    services: './src/pages/services/services.js',
-    testimonials: './src/pages/testimonials/testimonials.js'
+    'index/index': './src/pages/landing/index.js',
+    'about/about': './src/pages/about/about.js',
+    'contact/contact': './src/pages/contact/contact.js',
+    'services/services': './src/pages/services/services.js',
+    'testimonials/testimonials': './src/pages/testimonials/testimonials.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
+    // historyApiFallback: {
+    //   logger: console.log.bind(console),
+    //   rewrites: [
+    //     // { from: /\/about/, to: function(context) { return context.parsedUrl.pathname + '/about.html' } }
+    //     { from: /\/about/, to: '/about.html' }
+    //   ]
+    // },
     port: 8080
   },
-  // output: {
-  //   filename: 'main.js',
-  //   path: path.resolve(__dirname, 'dist')
-  // },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js'
+  },
   module: {
     rules: [
       {
@@ -26,14 +33,13 @@ module.exports = {
         use: {
           loader: "file-loader",
           options: {
-            name: "fonts/[name].[ext]"
+            name: "assets/fonts/[name].[ext]"
           },
         },
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // 'style-loader',
           { 
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -47,7 +53,13 @@ module.exports = {
       {
         test: /\.(png|svg|jpe?g)$/i,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images'
+            }
+          }
         ],
       },
       {
@@ -77,14 +89,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pages/landing/index.html',
       inject: true,
-      chunks: ['index'],
-      filename: 'index.html'
+      chunks: ['index/index'],
+      filename: 'index/index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/about/about.html',
       inject: true,
-      chunks: ['about'],
-      filename: 'about.html'
+      chunks: ['about/about'],
+      filename: 'about/index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/contact/contact.html',
@@ -92,20 +104,20 @@ module.exports = {
         carter_brown_info: require('./src/assets/content/carter_brown_info.json')
       },
       inject: true,
-      chunks: ['contact'],
-      filename: 'contact.html'
+      chunks: ['contact/contact'],
+      filename: 'contact/index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/services/services.html',
       inject: true,
-      chunks: ['services'],
-      filename: 'services.html'
+      chunks: ['services/services'],
+      filename: 'services/index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/testimonials/testimonials.html',
       inject: true,
-      chunks: ['testimonials'],
-      filename: 'testimonials.html'
+      chunks: ['testimonials/testimonials'],
+      filename: 'testimonials/index.html'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
