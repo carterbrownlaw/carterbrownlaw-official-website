@@ -34,6 +34,7 @@ footer {
 }
 
 .footer-heading {
+  font-family: $footerfontheadingfamily;
   font-size: $fontfooterheadingsize;
   color: $footerfontheadingcolor;
 }
@@ -52,7 +53,7 @@ footer {
   flex: 1;
   margin-top: 10vh;
   padding: 1em 0;
-  border-top: 1px grey solid;
+  border-top: 1px $footerfontheadingcolor solid;
   text-align: center;
   font-size: 12px;
 }

@@ -24,8 +24,8 @@ $navfontcolor1: rgba(234, 224, 213, 1);
 $headerfontcolor: rgba(234, 224, 213, 1);
 $headerheadingfontcolor: $headerfontcolor;
 $headerimportantfontcolor: $headerfontcolor;
-$footerfontcolor: white;
-$footerfontheadingcolor: grey;
+$footerfontcolor: rgba(255, 255, 255, 0.9);
+$footerfontheadingcolor: rgba(255, 255, 255, 0.4);
 $logofontcolor: $headerfontcolor;
 $testimonialfontcolor: #232732;
 
@@ -37,6 +37,7 @@ $logofontfamily: 'PlayfairDisplay', 'Times New Roman', Georgia;
 $headerheadingfontfamily: 'PlayfairDisplay', 'Times New Roman', Georgia;
 $headerfontfamily: 'Lato', 'Times New Roman', Georgia;
 $headerimportantfontfamily: 'Lato', 'Times New Roman', Georgia;
+$footerfontheadingfamily: 'Oswald', Georgia, 'Times New Roman', Times, serif;
 $footerfontfamily: Georgia, 'Times New Roman', Times, serif;
 $testimonialcardfontfamily: 'ShadowsIntoLight', Georgia, 'Times New Roman', Times, serif;
 $btnfontfamily: 'Oswald', Georgia, 'Times New Roman', Times, serif;
