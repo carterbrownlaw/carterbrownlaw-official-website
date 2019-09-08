@@ -92,3 +92,13 @@ $btncolor: #225560;
 $accentcolor: #225560;
 $header-banner-color: fade-out(darken($accentcolor, 20%), 0.7);
 
+// colorscheme two-option1
+$btncolor: #225560;
+$accentcolor: #225560;
+$header-banner-color: fade-out(darken($accentcolor, 20%), 0.7);
+$navbgcolor1: $background-color1;
+$navbgcolor2: lighten($background-color1, 10%);
+$navfontcolor: #151515;
+$navfontcolor1: #151515;
+$logofontcolor: #151515;
+$hamburgercolor: #151515;
