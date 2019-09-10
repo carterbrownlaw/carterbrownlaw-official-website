@@ -3,7 +3,7 @@
 @import '../components/page_header.scss';
 
 .page-header {
-  background: url('../../images/unsplash/amanda-index-temp1.jpg');
+  background: url('../../images/unsplash/index-temp3.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -86,9 +86,10 @@
 
 #testimonials-section {
   text-align: center;
+  width: 400px;
+  margin: 0 auto;
+
   @media screen and (min-width: $screen-sm-min) {
-    margin: 0 auto;
-    width: 400px;
   }
 }
 
@@ -104,16 +105,46 @@
   width: 80%;
 }
 
+.page-main-section {
+  min-height: 570px;
+}
 
 // services css
-#test-serv-section {
-  display: grid;
-  background: $sectionbgcolor2;
+#test-section, #serv-section {
 
+  @media screen and (min-width: $screen-lg-min) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .main-h2 {
+      width: 473px;
+      max-height: 2.5em;
+    }
+
+    .btn-main {
+      display: none;
+    }
+  }
+}
+
+#test-section {
+  background: darken($background-color1, 10%);
   .main-h2 {
     background: $background-color1; 
   }
 }
+
+#serv-section {
+  background: darken($background-color1, 15%);
+  .main-h2 {
+    background: darken($background-color1, 0%);
+  }
+  @media screen and (min-width: $screen-lg-min) {
+    flex-direction: row-reverse;
+  }
+}
+
 
 #services-section {
   text-align: center;
@@ -122,10 +153,11 @@
 
 #services-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  min-height: 300px;
-  max-width: 750px;
+  width: 400px;
+  // min-height: 300px;
+  // max-width: 750px;
   margin: 0 auto;
 }
 
@@ -190,7 +222,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
   }
 }
 
