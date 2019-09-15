@@ -6,3 +6,53 @@
   background-position: center;
   background-size: cover;
 }
+
+.main-h2 {
+  text-align: left;
+  max-width: 300px; //just randomly picked
+  padding-left: 5%;
+
+  @media screen and (min-width: $screen-lg-min) {
+    max-width: 350px;
+  }
+}
+
+#overview {
+
+  .main-h2 {
+    background: lighten($background-color1, 5%);
+  }
+}
+
+#criminal-law {
+  background: $sectionbgcolor1;
+
+  .main-h2 {
+    background: $background-color1;
+  }
+}
+
+#family-law {
+  background: $sectionbgcolor2;
+  
+  .main-h2 {
+    background: $sectionbgcolor1;
+  }
+}
+
+.service-list {
+ // list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+
+ li {
+   width: 50%;
+ }
+
+ // li::before {
+ //   content: "•";
+ //   margin-right:  0.5rem;
+ //   font-size: 2rem;
+
+ // }
+}
