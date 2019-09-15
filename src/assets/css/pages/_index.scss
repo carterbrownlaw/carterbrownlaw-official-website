@@ -33,6 +33,50 @@ em {
 
 // comapny summary css
 #company-summary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: $screen-lg-min) {
+    flex-direction: row;
+
+    .section-content {
+      max-width: 40%;
+      margin: 0;
+    }
+
+    .section-content:first-child {
+      // background: red;
+      margin-right: 1em;
+    }
+    .section-content:last-child {
+      // background: blue;
+      margin-left: 1em;
+    }
+  }
+}
+
+.index-contact-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $screen-lg-min) {
+    flex-direction: row;
+  }
+}
+
+.index-team-image {
+  width: 269px;
+}
+
+.index-contact-text {
+  margin: 0;
+}
+
+.index-contact-heading {
+  margin: 0;
+  font-family: $genh2fontfamily;
+  text-transform: uppercase;
 }
 
 // testimonials css
@@ -330,13 +374,15 @@ em {
   align-items: center;
   // height: 180px;
   // width: 320px;
-  height: calc(100vw * 9 / 16);
-  width: 100vw;
+  // width: 100%;
+  // height: calc(width * 9 / 16);
+  padding-bottom: 56.25%;
   margin: 0 auto;
   
   @media screen and (min-width: $screen-md-min) {
     width: 280px;
     height: 280px;
+    padding-bottom: 0;
   }
 }
 

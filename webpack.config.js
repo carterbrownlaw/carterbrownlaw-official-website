@@ -76,6 +76,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/pages/landing/index.html',
+      templateParameters: {
+        carter_brown_info: require('./src/assets/content/carter_brown_info.json')
+      },
       inject: true,
       chunks: ['index'],
       filename: 'index.html'
