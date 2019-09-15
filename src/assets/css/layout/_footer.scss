@@ -1,5 +1,29 @@
 @import 'abstracts/variables';
 
+.call-now {
+  position: -webkit-sticky;
+  position: sticky;
+  background: $accentcolor;
+  text-align: center;
+  color: $navfontcolor1;
+  bottom: 0;
+  font-family: $footerfontheadingfamily;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 1em 0;
+
+  @media screen and (min-width: $screen-lg-min) {
+    display: none;
+  }
+}
+
+.phone-icon {
+  padding: 16px 16px;
+  background-size: 100% 100%;
+  background-image: url('../images/icons/phone-sticky.svg');
+  margin-right: 1em;
+}
+
 footer {
   display: flex;
   flex-direction: column;
