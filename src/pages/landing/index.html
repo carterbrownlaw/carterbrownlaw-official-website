@@ -38,8 +38,10 @@
           <div class='index-contact-wrap'>
             <div class='index-contact'>
               <h3 class='index-contact-heading'>Contact Us</h3>
-              <a href='tel: ${carter_brown_info.employees.angela.phone}' class='btn btn-contact-index'>Call Angela</a>
-              <a href='tel: ${carter_brown_info.employees.steven.phone}' class='btn btn-contact-index'>Call Steven</a>
+              <div class='index-contact-btn-container'>
+                <a href='tel: ${carter_brown_info.employees.angela.phone}' class='btn btn-contact-index'>Call Angela</a>
+                <a href='tel: ${carter_brown_info.employees.steven.phone}' class='btn btn-contact-index'>Call Steven</a>
+              </div>
               <p class='index-contact-text'>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</p> 
             </div>
             <img src='https://via.placeholder.com/269x160' class='index-team-image'></img>
@@ -102,11 +104,11 @@
       <section class='page-main-section' id='about-section'>
         <h2 class='main-h2' id='about-section-heading'>Our Team</h2>
         <div class='section-content'>
-          <img src=${require('../../assets/images/unsplash/portrait_angela.jpg')}></img>
+          <img src=${require('../../assets/images/unsplash/portrait_angela.png')}></img>
           <a href='about.html#about-angela' class='btn-main'>ABOUT ANGELA</a>
         </div>
         <div class='section-content'>
-          <img src=${require('../../assets/images/unsplash/portrait_steven.jpg')}></img>
+          <img src=${require('../../assets/images/unsplash/portrait_steven.png')}></img>
           <a href='about.html#about-steven' class='btn-main'>ABOUT STEVEN</a>
         </div>
       </section>

@@ -66,6 +66,7 @@ em {
 }
 
 .index-team-image {
+  height: 160px;
   width: 269px;
 }
 
@@ -77,6 +78,24 @@ em {
   margin: 0;
   font-family: $genh2fontfamily;
   text-transform: uppercase;
+}
+
+.index-contact-btn-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
+  margin: 0.5em 0;
+
+  .btn-contact-index:first-child {
+    margin-bottom: 0.5em;
+  }
+}
+
+$btn-shadow: 0px 5px 7px -3.5px #151515;
+.btn-contact-index {
+  -moz-box-shadow: $btn-shadow;
+  -webkit-box-shadow: $btn-shadow;
+  box-shadow: $btn-shadow;
 }
 
 // testimonials css
