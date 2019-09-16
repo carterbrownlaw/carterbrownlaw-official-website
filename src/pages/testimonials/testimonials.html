@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Carter Brown Law Official Website">
-  <meta name="author" content="Stoyan Shukerov">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="theme-color" content="#000000">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-  <title>Carter • Brown Law</title>
-</head>
-<body>
-  <header>
-    ${require('../../partials/_navbar.html')}
-  </header>
-  <main id='testimonials'>
-  <div class='page-header'>
-    <div class='header-content'>
-      <div class='header-content-wrap'>
-        <h1 class='header-h1'>Testimonials</h1>
-        <p class='header-text-important'>Why choose us?</p>
-        <p class='header-text'>See what our customers have to say!</p>
+  ${require('../../partials/_html_head.html')}
+  <body>
+    <header>
+      ${require('../../partials/_navbar.html')}
+    </header>
+    <main id='testimonials'>
+    <div class='page-header'>
+      <div class='header-content'>
+        <div class='header-content-wrap'>
+          <h1 class='header-h1'>Testimonials</h1>
+          <p class='header-text-important'>Why choose us?</p>
+          <p class='header-text'>See what our customers have to say!</p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- all testimonials live in this section -->
-  <div class='page-main'>
-    <section class='page-main-section'>
-      <div id='testimonial-container'></div>
-    </section>
-  </div>
-  </main>
-  ${require('../../partials/_footer.html')}
-</body>
+    <!-- all testimonials live in this section -->
+    <div class='page-main'>
+      <section class='page-main-section'>
+        <div id='testimonial-container'></div>
+      </section>
+    </div>
+    </main>
+    ${require('../../partials/_footer.html')}
+  </body>
 </html>
