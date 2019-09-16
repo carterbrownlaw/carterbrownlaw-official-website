@@ -35,7 +35,7 @@ footer {
 #footer-top {
   display: flex;
   flex-direction: column;
-  margin: 2em 2em;
+  margin: 2em 2rem;
   font-size: $fontfootersize;
   font-family: $footerfontfamily;
 
@@ -71,6 +71,28 @@ footer {
   a {
     color: $footerfontcolor;
   }
+}
+
+.footer-social-icon {
+  height: 30px;
+  width: 30px;
+  // margin: 0 1rem;
+}
+
+.footer-icons-container {
+  display: flex;
+  margin: 0 2rem;
+}
+
+#fb-icon {
+  background: url('../images/icons/social/facebook.svg');
+  background-size: 100% 100%;
+}
+
+#insta-icon {
+  background: url('../images/icons/social/instagram.svg');
+  background-size: 100% 100%;
+  margin-left: 1em;
 }
 
 #footer-bottom {
