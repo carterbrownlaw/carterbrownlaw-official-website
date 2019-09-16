@@ -17,5 +17,4 @@
 
 # Credits when you are done:
 * http://www.freeimages.co.uk/linktous.htm
-* Amanda if you end up using her pictures.
 * All the unsplash images.
