@@ -33,20 +33,34 @@
       <section class='page-main-section' id='office-section'>
         <div class='section-content'>
           <img src=${require('../../assets/images/unsplash/office-temp.png')}></img>
-          <table class='contact-info'>
-            <tr>
-              <td><span class='icon icon-address'></span></td>
-              <td><em>Address</em>:</td>
-              <td>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</td>
-            </tr>
-            <tr>
-              <td><span class='icon icon-phone'></span></td>
-              <td><em>Office</em>:</td>
-              <td>
-                <a href='tel:${carter_brown_info.company.phone}'>${carter_brown_info.company.phone}</a>
-              </td>
-            </tr>
-          </table>
+          <div class=''>
+            <div class=''>
+              <span class='icon icon-address'></span>
+              <span>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</span>
+            </div>
+            <div class='about-btn-container'>
+              <a href='tel: ${carter_brown_info.employees.angela.phone}' class='btn'><span class='icon phone-icon-small'></span>Angela</a>
+              <a href='tel: ${carter_brown_info.employees.steven.phone}' class='btn'><span class='icon phone-icon-small'></span>Steven</a>
+            </div>
+
+            <!-- <td></td> -->
+            <!-- <td><em>Address</em>:</td> -->
+            <!-- <td>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</td> -->
+          </div>
+          <!-- <table class='contact-info'> -->
+          <!--   <tr> -->
+          <!--     <td><span class='icon icon-address'></span></td> -->
+          <!--     <td><em>Address</em>:</td> -->
+          <!--     <td>${carter_brown_info.company.address.street} ${carter_brown_info.company.address.city}, ${carter_brown_info.company.address.state} ${carter_brown_info.company.address.zip}</td> -->
+          <!--   </tr> -->
+          <!--   <tr> -->
+          <!--     <td><span class='icon icon-phone'></span></td> -->
+          <!--     <td><em>Office</em>:</td> -->
+          <!--     <td> -->
+          <!--       <a href='tel:${carter_brown_info.company.phone}'>${carter_brown_info.company.phone}</a> -->
+          <!--     </td> -->
+          <!--   </tr> -->
+          <!-- </table> -->
         </div>
         <!-- contains google map -->
         <div class='section-content'>
@@ -62,12 +76,12 @@
           <img src=${require('../../assets/images/unsplash/portrait_angela.png')} class='portrait-img'></img>
           <div class='contact-info'>
             <span class='icon icon-phone'></span>
-            <strong>Phone:</strong>
+            <!-- <strong>Phone:</strong> -->
             <a href='tel:${carter_brown_info.employees.angela.phone}' class='contact-card-num'>${carter_brown_info.employees.angela.phone} </a>
           </div>
           <div class='contact-info'>
             <span class='icon icon-email'></span>
-            <strong>Email:</strong>
+            <!-- <strong>Email:</strong> -->
             <a href='mailto:${carter_brown_info.employees.angela.email}' class='contact-card-email'>${carter_brown_info.employees.angela.email}</a>
           </div>
           <!-- </div> -->
@@ -79,12 +93,12 @@
           <img src=${require('../../assets/images/unsplash/portrait_steven.png')} class='portrait-img'></img>
           <div class='contact-info'>
             <span class='icon icon-phone'></span>
-            <strong>Phone:</strong>
+            <!-- <strong>Phone:</strong> -->
             <a href='tel:${carter_brown_info.employees.steven.phone}' class='contact-card-num'>${carter_brown_info.employees.steven.phone}</a>
           </div>
           <div class='contact-info'>
             <span class='icon icon-email'></span>
-            <strong>Email:</strong>
+            <!-- <strong>Email:</strong> -->
             <a href='mailto:${carter_brown_info.employees.steven.email}' class='contact-card-email'>${carter_brown_info.employees.steven.email}</a>
           </div>
           <!-- </div> -->
