@@ -59,6 +59,7 @@ em {
 .index-contact-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media screen and (min-width: $screen-lg-min) {
     flex-direction: row;
@@ -96,6 +97,13 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
   -moz-box-shadow: $btn-shadow;
   -webkit-box-shadow: $btn-shadow;
   box-shadow: $btn-shadow;
+}
+
+.phone-icon-small {
+  padding: 10px 10px;
+  background-size: 100% 100%;
+  margin-right: 0.5rem;
+  background-image: url('../../images/icons/phone-sticky.svg');
 }
 
 // testimonials css
