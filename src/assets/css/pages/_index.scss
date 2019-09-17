@@ -3,7 +3,7 @@
 @import '../components/page_header.scss';
 
 .page-header {
-  background: url('../../images/unsplash/index-hero-crp.jpg');
+  background: url('../../images/hero_images/index-hero.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -424,14 +424,14 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
 }
 
 .criminal {
-  background: url('../../images/unsplash/criminal-law-image-resize.jpg');
+  background: url('../../images/other/criminal-law-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .family {
-  background: url('../../images/unsplash/family-law-image2.jpg');
+  background: url('../../images/other/family-law-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
