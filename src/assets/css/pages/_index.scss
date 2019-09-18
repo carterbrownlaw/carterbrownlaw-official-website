@@ -176,12 +176,15 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
 }
 
 #testimonial-heading {
+  text-align: right;
+  margin: 0 1em 1em 0;
+  max-width: 300px;
+  padding-right: 1em;
+  background: $background-color1; //darken($background-color1, 5%);
+  
   @media screen and (min-width: $screen-lg-min) {
-    margin: 0 1em 1em 0;
-    padding-right: 1em;
-    text-align: right;
     background: darken($background-color1, 10%);
-    // max-width: 850px;
+    max-width: none;
   }
 }
 
@@ -219,40 +222,30 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
 }
 
 #practice-area-heading {
+  padding-left: 1em;
+  margin: 0 1em 1em 0;
+  text-align: left;
+  background: darken($background-color1, 10%);
+  max-width: 300px;
+
   @media screen and (min-width: $screen-lg-min) {
-    // max-width: 850px;
-    padding-left: 1em;
+    max-width: none;
+    // padding-left: 1em;
+    // margin: 0 0 1em 1em;
+    // text-align: left;
     margin: 0 0 1em 1em;
-    text-align: left;
     background: darken($background-color1, 10%);
   }
 }
 
 .main-h2 {
   max-height: 2.5em;
-  // max-width: 700px;
   width: auto;
   position: relative;
   margin: 0 auto;
   margin-bottom: 0.5em;
-
-  &:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: $accentcolor;
-    transform: scaleX(0.70);
-  }
-
-  @media screen and (min-width: $screen-lg-min) {
-    &:after {
-      display: none;
-    }
-  }
 }
+
 // about css
 #about-section {
   background: $sectionbgcolor3;
@@ -270,6 +263,12 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
     display: block;
   }
 
+  #about-section-heading {
+    background: darken($background-color1, 10%);
+    margin: 0 1em 1em 0;
+    max-width: 300px;
+  }
+
   @media screen and (min-width: $screen-lg-min) {
     display: flex;
     flex-direction: row;
@@ -278,6 +277,7 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
     #about-section-heading {
       background: $sectionbgcolor1;
       width: 100%;
+      max-width: none;
     }
   }
 }
