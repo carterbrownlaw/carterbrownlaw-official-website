@@ -12,6 +12,12 @@ em {
   font-weight: 700;
 }
 
+.section-content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  // min-height: 100vh;
+}
+
 // header specific css
 .header-h1 {
   padding-bottom: 0.2em;
@@ -31,11 +37,15 @@ em {
   font-size: smaller;
 }
 
-// comapny summary css
+// company summary css
 #company-summary-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .main-h2 {
+    text-align: left;
+  }
 
   @media screen and (min-width: $screen-lg-min) {
     flex-direction: row;
@@ -59,6 +69,7 @@ em {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 3rem 0;
 
   @media screen and (min-width: $screen-lg-min) {
     flex-direction: row;
@@ -66,8 +77,13 @@ em {
 }
 
 .index-team-image {
+  margin-top: 2rem;
   height: 160px;
   width: 269px;
+
+  @media screen and (min-width: $screen-lg-min) {
+    margin-top: 0;
+  }
 }
 
 .index-contact-text {
@@ -177,7 +193,7 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
 
 #testimonial-heading {
   text-align: right;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 2em 0;
   max-width: 300px;
   padding-right: 1em;
   background: $background-color1; //darken($background-color1, 5%);
@@ -223,7 +239,7 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
 
 #practice-area-heading {
   padding-left: 1em;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 2em 0;
   text-align: left;
   background: darken($background-color1, 10%);
   max-width: 300px;
@@ -233,7 +249,7 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
     // padding-left: 1em;
     // margin: 0 0 1em 1em;
     // text-align: left;
-    margin: 0 0 1em 1em;
+    margin: 0 0 2em 1em;
     background: darken($background-color1, 10%);
   }
 }
@@ -251,10 +267,6 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
   background: $sectionbgcolor3;
   text-align: center;
 
-  .section-content {
-    margin-bottom: 2em;
-  }
-
   img {
     // TODO: adjust dimension correctly
     max-height: 400px; 
@@ -265,7 +277,7 @@ $btn-shadow: 0px 5px 7px -3.5px #151515;
 
   #about-section-heading {
     background: darken($background-color1, 10%);
-    margin: 0 1em 1em 0;
+    margin: 0 1em 2em 0;
     max-width: 300px;
   }
 
