@@ -46,9 +46,12 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g)$/i,
-        use: [
-          'file-loader'
-        ],
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "images/[name].[ext]"
+          },
+        }
       },
       {
         test:/_\w+\.html$/,
