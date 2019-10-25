@@ -107,6 +107,7 @@
 
 #contact-card-section {
   display: grid;
+  padding-bottom: 3em;
   background: $sectionbgcolor1;
 
   @media screen and (min-width: $screen-md-min) {
