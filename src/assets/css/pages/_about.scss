@@ -18,23 +18,23 @@ em {
   flex-direction: column;
   max-width: 80%;
 
-  @media screen and (min-width: $screen-lg-min) {
+  @media screen and (min-width: $screen-xl-min) {
     flex-direction: row;
-
-    .about-img {
-      width: 300px;
-      height: 200px;
-    }
 
     .section-left {
       margin-right: 1rem;
     }
 
     .section-right {
-      margin-left: 2rem;
+      margin: 0 auto;
       align-self: center;
     }
   }
+}
+
+.about-img {
+  width: 533px;
+  height: 400px;
 }
 
 

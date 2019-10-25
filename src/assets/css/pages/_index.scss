@@ -77,11 +77,12 @@ em {
 
 .index-team-image {
   margin-top: 2rem;
-  height: 160px;
-  width: 269px;
+  height: 175px;
+  width: 311px;
 
   @media screen and (min-width: $screen-lg-min) {
     margin-top: 0;
+    margin-left: 0.5rem;
   }
 }
 
