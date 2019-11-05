@@ -33,8 +33,13 @@ em {
 }
 
 .about-img {
-  width: 533px;
-  height: 400px;
+  width: 333px;
+  height: 250px;
+
+  @media screen and (min-width: $screen-md-min) {
+    width: 533px;
+    height: 400px;
+  }
 }
 
 
