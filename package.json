@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "delicious-hamburgers": "^0.4.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "load-google-maps-api": "^2.0.1",
     "tiny-slider": "^2.9.2"
   }
