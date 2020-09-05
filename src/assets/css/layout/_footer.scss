@@ -31,6 +31,10 @@ footer {
   color: $footerfontcolor;
   padding-top: 0.5em;
   // margin-top: 2em;
+
+  a {
+    color: $footerfontcolor;
+  }
 }
 
 #footer-top {
@@ -45,6 +49,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 0;
+    margin: 2em 75px;
   }
 }
 
@@ -83,6 +88,10 @@ footer {
 .footer-icons-container {
   display: flex;
   margin: 0 2rem;
+
+  @media screen and (min-width: $screen-md-min) {
+    margin: 2em 75px;
+  }
 }
 
 #fb-icon {
